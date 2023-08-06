@@ -1,0 +1,475 @@
+/*Selector Reset o Universal*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Selector de tipo ID*/ 
+/*Propiedad*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.imglogo {
+    width: 70px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top: 18px;
+}
+
+.home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.invictus, .tom-ford, .dolce-gabbana {
+    width: 450px;
+}
+
+.Whatsapp, .Facebook, .Instagram {
+    width: 20px;
+}
+
+iframe {
+    width: 500px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.givenchy, .givenchym, .carolinah {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+}
+
+.p-contacto {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-input {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    width: 100%;
+}
+
+.div-marcas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    margin: 10px;
+}
+
+/*Flexbox Teoría*/
+/*Contenedor Padre*/
+.flex-container {
+    /*Activamos flex*/
+    display: flex;
+    /*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna*/
+    flex-direction: row;
+    /*dispone los elementos flexibles en el eje principal*/
+    justify-content: center;
+    /*dispone los elementos flexibles en el eje secunadrio*/
+    align-items: center;
+    /*defino el desborde de los flex items*/
+
+    padding: 15px 0px 20px 0px;
+    height: 400px;
+    margin: 50px
+}
+
+
+.caja-c1, .caja-c2, .caja-c3, .caja-c4, .caja-c5, .caja-c6, .caja-c7, .caja-c8, .caja-c9, .caja-c10, .caja-c11, .caja-c12, .caja-c13, .caja-c14, .caja-c15 {
+
+    /*box modeling*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    
+
+
+
+/*tipografia*/
+    color: #000
+    font-family; Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.ben-prom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/*CSS GRID PRACTICA*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*tipografia*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+
+    /*Box-modeling*/
+    padding: 20px 0;
+}
+
+.grid-container {
+    /*Box-modeling*/
+    width: 90px;
+    max-width: 1000px;
+    border: 10px solid #000;
+    margin: auto;
+
+    font-size: 50px;
+    text-align: center;
+
+    /*Activamos GRID*/
+    display: grid;
+    column-gap: 5px;
+    /*definimos la cantidad de filas y el alto de las mismas*/
+    grid-template-rows: repeat(4,1fr);
+    /*definimos la cantidad de columnas y el anchode las mismas*/
+    grid-template-columns: repeat()
+    
+}
+
+.grid-container > div {
+   /*Box-modeling*/
+  display: block;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: #d86812;
+
+} 
+
+/*Grid template areas*/
+
+.contenedor-grid {
+    /*tipografia*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+    /*Box-modeling*/
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    border: 5px groove #fff;
+
+    /*Activamos grid*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,auto);
+    gap: 10px;
+
+    /*grid areas*/
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "nav"
+    "footer"
+    ;
+
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    background-color: #12d372b2;
+    grid-column: 1/4; 
+    /* grid-row: 1/4;  */
+    /*grid-area: header; */
+}
+
+.item2 {
+    background-color: #3e4b78dc;
+    grid-area: nav;
+
+}
+
+.item3 {
+    background-color: #d86812;
+    grid-area: main;
+}
+
+.item4 {
+    background-color: #732aaf;
+    grid-area: aside;
+}
+
+.item5 {
+    background-color: #968A1B;
+    grid-area: footer;
+}
+
+.titulo-prueba {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Modificar la disposicion de nuestro grid areas para este breakpoint*/
+
+/*Nabvar con Flexbox*/
+
+.icon-frascos {
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+/*Pseudoclases*/
+a:hover {
+    font-size: 20px;
+    color: #1b961b;
+    border-bottom: 3px solid #000;
+    background-color: #3fbda8;
+}
+
+a:active {
+    background-color: #c16666;
+    color: #000;
+    padding: 10px;
+}
+
+a:link {
+    color: #1f43b0;
+}
+
+a:visited {
+    color: rgb(205, 7, 7);
+}
+
+/*:nth-child(N)*/
+.grupo {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+/*:nth-child(N) & nth-last-child*/
+.grupo {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+/* .lista :nth-child(7){
+    background-color: #00cdf1;
+    color: #732aaf;
+    font-size: 20px;
+} */
+
+/*posiciones impares*/
+.lista :nth-child(odd) {
+    background-color: #00cdf1;
+    color: #968A1B;
+    font-size: 20px;
+}
+
+/*posiciones pares*/
+.lista :nth-child(even){
+    background-color: #732aaf;
+    color: blue;
+    font-size: 20px;
+}
+
+/*First and last of type*/
+
+.elementos p:first-of-type {
+    text-transform: uppercase;
+    color: #23fde6;
+    background-color: #bf8eee;
+}
+
+.elementos p:last-of-type {
+    text-transform: uppercase;
+    color: #d86812;
+    background-color: #91e5a2;
+}
+
+.elementos div:first-of-type {
+    background-color: #70ece3;
+    text-transform: capitalize;
+    color: #b0b01f;
+}
+
+/*Metodologia BEM*/
+.contenedor {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+
+/*Bloque 1*/
+.tarjeta {
+    width: 600px;
+    border: 5px double #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/*Elemento 1*/
+.tarjeta_imagen {
+    width: 60%;
+}
+
+/*Elemento 2*/
+.tarjeta__textos {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/*Elemento 3*/
+.tarjeta__enlace {
+    color: crimson;
+    padding: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tarjeta__parrafo {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*Bloque 2*/
+.boton {
+    background-color: #000;
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff;
+}
+
+/*Modificador*/
+.boton--alternativo {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 0;
+}
+
+
+
+/*Mediaqueries*/
+@media screen and (max-width: 480px) {
+    .contenedor-grid {
+        /*tipografia*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        
+        /*Box-modeling*/
+        width: 90%;
+        height: 600px;
+        margin: 40px auto;
+        border: 5px groove #fff;
+    
+        /*Activamos grid*/
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,auto);
+        gap: 10px;
+    
+        /*grid areas*/
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "nav"
+        "footer"
+        ;
+    
+    }
+}
+
+@media screen and (min-width: 481px ) and (max-width: 960px) {
+    .titulo-prueba {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        color: #732aaf;
+        font-weight: lighter;
+        border: 2px groove #000;
+        margin-left: 20px;
+        margin-top: 20px;
+ }
+}
+
+
+
