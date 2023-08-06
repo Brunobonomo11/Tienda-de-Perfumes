@@ -459,6 +459,10 @@ a:visited {
     }
 }
 
+.Givenchy-perfum {
+    width: 50%;
+}
+
 @media screen and (min-width: 481px ) and (max-width: 960px) {
     .titulo-prueba {
         font-family: 'Times New Roman', Times, serif;
