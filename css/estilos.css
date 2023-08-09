@@ -29,11 +29,11 @@
     width: 300px;
 }
 
-.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro {
+.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
     width: 300px;
 }
 
-.versace-dos, .calvin-klein {
+.versace-dos, .calvin-klein, .dior-seiscuotas {
     display: flex;
     flex-direction: row;
     justify-content: center;
