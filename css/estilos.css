@@ -59,14 +59,6 @@ iframe {
     align-items: end;
 }
 
-.mapas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .givenchy, .givenchym, .carolinah {
     width: 100px;
     display: flex;
@@ -234,8 +226,6 @@ header {
     /*definimos la cantidad de filas y el alto de las mismas*/
     grid-template-columns: 250px 250px 250px 250px;
     /*definimos la cantidad de columnas y el anchode las mismas*/
-   
-    
 }
 
 .grid-container2 {
@@ -256,6 +246,11 @@ header {
      grid-template-columns: 425px 425px 425px 425px;
      /*definimos la cantidad de columnas y el anchode las mismas*/
      
+}
+
+.mapa-uno, .mapa-dos, .mapa-tres, .mapa-cuatro, .mapa-cinco, .mapa-seis {
+    width: 200px;
+    height: 200px;
 }
 
 .grid-container > div {
