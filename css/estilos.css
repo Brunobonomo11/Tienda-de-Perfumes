@@ -253,6 +253,17 @@ header {
     height: 200px;
 }
 
+.mapas {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+}
+
+.contenedor-card, .contenedor-card2, .contenedor-card3, .contenedor-card4, .contenedor-card5, .contenedor-card6 {
+    width: 200px;
+
+}
+
 .grid-container > div {
    /*Box-modeling*/
   display: block;
