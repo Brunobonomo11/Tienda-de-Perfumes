@@ -8,42 +8,66 @@
    <!--Favicon-->
    <link rel="shortcut icon" href="../Assets (Imagenes)/Icons/Flaticon Perfume.png" type="image/x-icon">
    <!--Bootstrap Download-->
-   <!-- <link rel="stylesheet" href="../Libs/Bootstrap/css/bootstrap.min.css"> -->
+   <link rel="stylesheet" href="../Libs/Bootstrap/css/bootstrap.min.css">
    <!--Bootstrap Via CDN-->
    <!--Bootstrap CSS-->
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
    <!--CSS-->
    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
    <!--HTML SEMANTICO-->
-   <nav class="nav">
-      <div class="logo">
-         <img src="../Assets (Imagenes)/Logo Tienda.png" class="imglogo"  alt="favicon">
-      </div>
-      <div class="navegacion">
-      </div>
-        <a href="../index.html" class="home">HOME</a>
+  
         <!--RUTA INTERNA-->
-        <a href="../paginas/perfumes.html" class="perfumes">PERFUMES</a>
-        <a href="../paginas/marcas.html" class="marcas">MARCAS</a>
-        <a href="../paginas/Sucursales.html" class="sucursales">SUCURSALES</a>
-        <a href="../paginas/promociones.html" class="promociones">PROMOCIONES</a>
-        <a href="../paginas/contacto.html" class="contacto">CONTACTO</a>
-
-       <input type="search" class="barra-de-busqueda"> 
-       
-      
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">
+             <img src="../Assets (Imagenes)/Logo Tienda.png" class="imglogo" alt="logo">
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="../index.html">HOME</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="./paginas/perfumes.html">PERFUMES</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="../paginas/marcas.html">MARCAS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="../paginas/Sucursales.html">SUCURSALES</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="../paginas/promociones.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   VER MAS
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="../paginas/promociones.html">PROMOCIONES</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+         </div>
       </nav>
 
+    <div class="perfume-hombre-mujer">
       <p>PERFUMES DE HOMBRE</p>
       <img src="../Assets (Imagenes)/Givenchy Perfum Intense.webp" class="givenchy"  alt="Givenchy">
       <p>PERFUMES DE MUJER</p>
       <img src="../Assets (Imagenes)/Perfumes Givenchy Mujer.webp" class="givenchym"  alt="Givenchy">
       <p>PERFUMES UNISEX</p>
       <img src="../Assets (Imagenes)/Carolina Herrera.webp" class="carolinah"  alt="Givenchy">
+   </div>
 
       <div>
         <p>Categoria</p>
@@ -101,8 +125,8 @@
              </select>
              </form>
        </div>
-   <main>
-      <img class="Givenchy-perfum" src="../Assets (Imagenes)/Givenchy Perfum Intense.webp" alt="Givenchy-perfum">
+   
+       <main>
    </main>
 
    <header>
@@ -115,7 +139,7 @@
     </header>
  
     <!--Bootstrap JS-->
-    <!-- <script src="../Libs/Bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../Libs/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
 
 </body>

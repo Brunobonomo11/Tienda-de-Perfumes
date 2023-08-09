@@ -18,42 +18,128 @@
 
 <body>
    <!--HTML SEMANTICO-->
-   <nav class="nav">
-      <div class="logo">
-         <img src="./Assets (Imagenes)/Logo Tienda.png" class="imglogo"  alt="favicon">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Assets (Imagenes)/Logo Tienda.png" class="imglogo" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./paginas/perfumes.html">PERFUMES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/marcas.html">MARCAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/Sucursales.html">SUCURSALES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./paginas/promociones.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              VER MAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./paginas/promociones.html">PROMOCIONES</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <div class="navegacion">
-      </div>
-        <a href="./index.html" class="home">HOME</a>
-        <!--RUTA INTERNA-->
-        <a href="./paginas/perfumes.html" class="perfumes">PERFUMES</a>
-        <a href="./paginas/marcas.html" class="marcas">MARCAS</a>
-        <a href="./paginas/Sucursales.html" class="sucursales">SUCURSALES</a>
-        <a href="./paginas/promociones.html" class="promociones">PROMOCIONES</a>
-        <a href="./paginas/contacto.html" class="contacto">CONTACTO</a>
+    </div>
+ 
+    <!-- Navbar content -->
+          <!-- <a href="./index.html" class="home">HOME</a> -->
+          <!--RUTA INTERNA-->
+          <!-- <a href="./paginas/perfumes.html" class="perfumes">PERFUMES</a>
+          <a href="./paginas/marcas.html" class="marcas">MARCAS</a>
+          <a href="./paginas/Sucursales.html" class="sucursales">SUCURSALES</a>
+          <a href="./paginas/promociones.html" class="promociones">PROMOCIONES</a>
+          <a href="./paginas/contacto.html" class="contacto">CONTACTO</a> -->
+      
+    </nav>    
 
-       <input type="search" class="barra-de-busqueda"> 
+        <div>
+          <img src="./Assets (Imagenes)/Creed Perfumes.jpg" class="creed-perfumes" alt="creed-perfumes">
+        </div>
+
+          <div>
+            <h4 class="creed-cuotas">12 CUOTAS SIN INTERES</h4>
+            <button class="boton-comprar">Comprar</button>
+          </div>
        
-    </nav>
+
+               
+      
+         <h3 class="ben-prom">BENEFICIOS Y PROMOCIONES</h3>
+      
+        <div class="flexi-container">
+         
+          <div class="caj-c1">
+            <img src="./Assets (Imagenes)/Bbva frances.webp" class="bbvafrances" alt="bbva-frances">
+          </div>
+
+          <div class="caj-c2">
+              <img src="./Assets (Imagenes)/ICBC imagen.jpg" class="icbc" alt="icbc-imagen">
+          </div>
+
+          <div class="caj-c3">
+              <img src="./Assets (Imagenes)/MODO.png" class="modo" alt="modo-imagen">
+          </div>
+
+          <div class="caj-c4">
+              <img src="./Assets (Imagenes)/santander-logo.png" class="santander" alt="santander-banco">
+          </div>
+
+          <div class="caj-c5">
+              <img src="./Assets (Imagenes)/logo-American-Express.png" class="american" alt="american">
+          </div>
+
+         </div>
+
+         <button class="vermaspro">VER MAS PROMOCIONES</button>
+
+         <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">NEW ARRIWALS</h3>
     
-    <h1 class="display-5 p-2 d-flex justify-content-center aling-items-center">NEW ARRIWALS</h1>
-    
-    <aside>
+  <main>
+
+  </main>  
+
+
+      <div class="new-arriwals">
         <img src="Assets (Imagenes)/Invictus New.webp" class="invictus"  alt="Invictus">
         <img src="Assets (Imagenes)/Tom Ford.webp" class="tom-ford"  alt="Tom-Ford">
         <img src="Assets (Imagenes)/Dolce & Gabbana.webp" class="dolce-gabbana"  alt="Dolce-&-Gabbana">
-    </aside>
+        <img src="./Assets (Imagenes)/Perfumes Givenchy Mujer.webp" class="given-mujer" alt="givenchy-mujer">
+        <img src="./Assets (Imagenes)/Givenchy Perfum Intense.webp" class="given-intense" alt="givenchy-intense">
+      </div> 
+    
+    <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">VERSACE | 12 CUOTAS SIN INTERES </h3>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rn_sTseKmLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="versace-dos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cs-7dLsjG9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="pour" src="./Assets (Imagenes)/dylan-blue-pour-homme.jpg" alt="pour-homme">
+        <img class="eros" src="./Assets (Imagenes)/Versace Eros.webp" alt="eros">
+        <img class="blue" src="./Assets (Imagenes)/Versace Pour blue.webp" alt="pour-blue">
+      </div>
 
-
-      
-    <main>
-      
-          
-        </main>  
-
-        <header>
+      <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">CALVIN KLEIN | 6 CUOTAS SIN INTERES </h3>
+       
+        <div class="calvin-klein">
+          <img class="ckblanco" src="./Assets (Imagenes)/Calvin klein blanco.jpg" alt="calvin-blanco">
+          <img class="ckbotella" src="./Assets (Imagenes)/Calvin Klein botella.webp" alt="calvin-botella">
+          <img class="cknegro" src="./Assets (Imagenes)/Calvin klein negro.webp" alt="calvin-negro">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bdgZ3pauMJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+     <header>
 
          <h3 class="nuestrasredes">Nuestras Redes</h3>
             <img src="Assets (Imagenes)/Icons/bxl-whatsapp.svg" class="Whatsapp"  alt="Whatsapp">
