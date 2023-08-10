@@ -1,8 +1,22 @@
 /*Variables*/
-/*$color-primario: blue;
+$color-primario: blue;
 $color-secundario: #e9e91e;
+$font-size: 1.5rem;
+$font-principal: url(../Fuentes/Roboto-Medium.ttf);
 
-body {
+/*Mixins o funciones*/
+/*mixin sin parametros*/
+/*@mixin crearBordes($colorBorde,$tamanio,$colorBorde) {
+    border: $tamanio solid $colorBorde;
+    border-radius: $tamanio;
+    background-color: $colorBorde;
+}
+
+.principal {
+    @include crearBordes();
+}*/
+
+/*body {
     background-color: $color-primario;
 }*/
 
