@@ -1,5 +1,15 @@
-/*Variables*/
-/*$color-primario: blue;
+/*
+@import "colores"
+@import "navegacion"
+@import "fuentes"
+@import "footer"
+*/
+
+/*Variables globales*/
+/*
+$relleno: 20px;
+$fuente-principal: arial, helvetica, sans-serif;
+$color-primario: blue;
 $color-secundario: #e9e91e;
 
 /*Mixins o funciones*/
@@ -15,8 +25,11 @@ $color-secundario: #e9e91e;
 }*/
 /*body {
     background-color: $color-primario;
-}*/
-/*Selector Reset o Universal*/
+    
+    operaciones matematicas + - / *
+    padding: ($relleno + 100 * 10;
+}
+*/
 
 /*Selector Reset o Universal*/
 * {
@@ -45,8 +58,89 @@ $color-secundario: #e9e91e;
   nav ul ui a {
       background-color : #000
   }
-  
-  */
+
+  nav {
+    background color: red
+      }
+        ul {
+          life-style-type: none;
+        }
+         li {
+    }
+           a {
+}
+
+*/
+
+
+/*Condicionales IF*/
+/*
+$color-home : red;
+$ancho: 100px;
+
+#barra-navegacion {
+  @if (color-home == blue){
+    background-color: green;
+    color: #000
+    width: 100%;
+  } @else if ($color-home == red) {
+   background-color: red;
+  }
+  @ else {
+    background-color: pink;
+  }
+}
+
+*/
+
+
+/*
+$color-home : red;
+$ancho: 100px;
+
+#barra-navegacion {
+  @if ($ancho > 50px){
+    background-color: green;
+    color: #000
+    width: 100%;
+  } @else if ($ancho >=100px ){
+   background-color: red;
+  }
+  @ else {
+    background-color: pink;
+  }
+}
+
+*/
+
+
+/*Bucle p ciclo FOR (ciclo exacto)*/
+
+
+/*
+$i: 1;
+
+@for $i from 1 through 6 {
+
+}
+
+*/
+
+/*Bucle o ciclo each*/
+/*inicializamos la variable o array*/
+
+/* 
+$lista1; red, green, yellow, blue;
+
+@each $color in $lista1 {
+  background-color: $color;
+  }
+}
+
+*/
+
+
+
   
   .home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
