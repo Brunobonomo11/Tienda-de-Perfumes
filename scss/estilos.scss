@@ -2,6 +2,7 @@
 $color-primario: blue;
 $color-secundario: #e9e91e;
 $font-size: 1.5rem;
+$relleno: 20px;
 $font-principal: url(../Fuentes/Roboto-Medium.ttf);
 
 /*Mixins o funciones*/
@@ -35,6 +36,29 @@ $font-principal: url(../Fuentes/Roboto-Medium.ttf);
     align-items: center;
     height: 80px;
 }
+
+/*nesting o anidamiento*/
+
+/*
+nav {
+    display: flex;
+    ul{
+        list-style-type: none;
+        li{
+            font-size: $font-size;
+            color: blue;
+            &:hover {
+               color: red;
+            } 
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+*/
+
+
 
 .imglogo {
     width: 70px;

@@ -87,6 +87,14 @@ iframe {
   align-items: end;
 }
 
+.iframesucur {
+  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  justify-content: flex-end;
+  align-items: end;
+}
+
 .givenchy, .givenchym, .carolinah {
   width: 100px;
   display: flex;
@@ -281,8 +289,7 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      width: 80%;
-      max-width: 800px;
+      width: 100%;
 }
 
 .mapa {
