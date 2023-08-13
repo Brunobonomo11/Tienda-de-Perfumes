@@ -306,15 +306,20 @@ footer {
 }
 
 .letras {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-top: 150px;
+  font-size: 50px;
 }
 
-main {
+/*main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
   width: 100%;
 }
+*/
 
 .marcas-a, .marcas-b {
   display: flex;
