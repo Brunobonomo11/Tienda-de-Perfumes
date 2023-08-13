@@ -306,14 +306,11 @@ footer {
 }
 
 .letras {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding-top: 150px;
-  font-size: 50px;
 }
 
-/*main {
+/*
+main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
@@ -384,6 +381,91 @@ h2 {
   align-items: flex-start;
 }
 
+/*Gradientes*/
+/*background-image: linear-gradient(to bottom blue, white, green);
+*/
+/*background-image: radial-gradient(ellipse, red, yellow);
+*/
+/*.givenchyprueba {
+  width: 20%; */
+/*Transformaciones*/
+/*transform: translateX(100px);
+*/
+/*
+transform: translateY(200px);
+*/
+/*
+transform: rotate(90deg);
+*/
+/*
+transform: scale(2,3);
+*/
+/*
+transform: skew(30deg);
+*/
+/*
+.boton-prueba {
+  background: #000;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 100px;
+  color: #fff;
+  margin-top: 10px;
+*/
+/*transicion
+  transition: width 3s;
+
+}*/
+/*.boton-prueba:hover {
+  width: 110%;
+}
+*/
+/*Animaciones
+
+.whatsapp-prueba {
+  width: 100px;
+  animation-name: logo-whatsapp-anime;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+*/
+/*@keyframes logo-whatsapp-anime{
+
+  ejemplo 1
+  0%{
+    width: 100px;
+  }
+  25%{
+    width: 50px;
+  }
+  50%{
+    width: 200px;
+  }
+  75%{
+    width: 300px;
+  }
+  100%{
+    width: 100px;
+  }
+
+}*/
+/*@keyframes logo-whatsapp-anime{
+
+  ejemplo 2
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(380deg);
+  }
+
+}*/
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
