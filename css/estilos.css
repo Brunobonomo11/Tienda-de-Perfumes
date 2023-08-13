@@ -30,26 +30,6 @@ $color-secundario: #e9e91e;
     padding: ($relleno + 100 * 10;
 }
 */
-/*Selector Reset o Universal*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*Tipografia*/
-/*fuente local*/
-@font-face {
-  font-family: "fuente-principal";
-  src: url(../Fuentes/Roboto-Medium.ttf);
-}
-/*Selector de tipo ID*/
-/*Propiedad*/
-.imglogo {
-  width: 70px;
-  padding-left: 70px;
-  padding-bottom: 15px;
-  padding-top: 18px;
-}
 
 /* Personalizar varias etiquetas
 
@@ -126,59 +106,31 @@ $lista1; red, green, yellow, blue;
 }
 
 */
+
+/*Selector Reset o Universal*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Tipografia*/
+/*fuente local*/
+@font-face {
+  font-family: "fuente-principal";
+  src: url(../Fuentes/Roboto-Medium.ttf);
+}
+/*Selector de tipo ID*/
+/*Propiedad*/
+.imglogo {
+  width: 70px;
+  padding-left: 70px;
+  padding-bottom: 15px;
+  padding-top: 18px;
+}
+
 .home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
-}
-
-.invictus, .tom-ford, .dolce-gabbana, .given-mujer, .given-intense {
-  width: 300px;
-}
-
-.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
-  width: 300px;
-}
-
-.versace-dos, .calvin-klein, .dior-seiscuotas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.new-arriwals {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.Whatsapp, .Facebook, .Instagram {
-  width: 20px;
-}
-
-iframe {
-  width: 25%;
-  display: flex;
-  padding-top: 25px;
-  justify-content: flex-end;
-  align-items: end;
-}
-
-.iframesucur {
-  width: 100%;
-  display: flex;
-  padding-top: 25px;
-  justify-content: flex-end;
-  align-items: end;
-}
-
-.givenchy, .givenchym, .carolinah {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid;
 }
 
 .creed-perfumes {
@@ -200,70 +152,13 @@ iframe {
   text-align: center;
 }
 
-.p-contacto {
+.ben-prom {
   display: flex;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.div-input {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  width: 100%;
-}
-
-.div-marcas {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px 0px 20px 0px;
-  margin: 10px;
-}
-
-/*Flexbox Teoría*/
-/*Contenedor Padre*/
-.flex-container {
-  /*Activamos flex*/
-  display: flex;
-  /*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna*/
-  flex-direction: row;
-  /*dispone los elementos flexibles en el eje principal*/
-  justify-content: center;
-  /*dispone los elementos flexibles en el eje secunadrio*/
-  align-items: center;
-  /*defino el desborde de los flex items*/
-  border: 5px solid #000;
-  padding: 15px 0px 20px 0px;
-  height: 400px;
-  margin: 50px;
-}
-
-.caja-c1, .caja-c2, .caja-c3, .caja-c4, .caja-c5 {
-  /*box modeling*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  margin: 5px;
+  margin-top: 50px;
 }
 
 .flexi-container {
@@ -275,13 +170,6 @@ main {
   padding: 15px 0px 20px 0px;
   margin: 50px;
   height: 400px;
-}
-
-.vermaspro {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
 }
 
 .caj-c1, .caj-c2, .caj-c3, .caj-c4, .caj-c5 {
@@ -296,42 +184,71 @@ main {
   width: 200px;
 }
 
-.ben-prom {
+/*
+.caja-c1, .caja-c2, .caja-c3, .caja-c4, .caja-c5 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+*/
+
+.vermaspro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-arriwals {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px 20px 0px;
-  margin-top: 50px;
 }
 
-header {
+.invictus, .tom-ford, .dolce-gabbana, .given-mujer, .given-intense {
+  width: 300px;
+}
+
+.versace-dos, .calvin-klein, .dior-seiscuotas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
+  width: 300px;
+}
+
+iframe {
+  width: 25%;
+  display: flex;
+  padding-top: 25px;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+footer {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
 
-/*CSS GRID PRACTICA*/
-.encabezado {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 50px 0px 50px 0px;
+.Whatsapp, .Facebook, .Instagram {
+  width: 20px;
 }
 
-.grid-container {
-  /*Box-modeling*/
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  /*Activamos GRID*/
-  display: grid;
-  /*definimos la cantidad de filas y el alto de las mismas*/
-  grid-template-columns: 250px 250px 250px 250px;
-  /*definimos la cantidad de columnas y el anchode las mismas*/
+.givenchy, .givenchym, .carolinah {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid;
 }
 
 .grid-container2 {
@@ -351,39 +268,55 @@ header {
   /*definimos la cantidad de columnas y el anchode las mismas*/
 }
 
-.contenedor {
+.perfume-hombre-mujer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: solid;
+  padding: 0px 20px 0px 20px;
+}
+
+/*CSS GRID PRACTICA*/
+.encabezado {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0px 50px 0px;
 }
 
-.mapa {
-  width: 25%;
-  margin: 10px;
-  padding: 20px;
-}
-
-/*.mapa-uno, .mapa-dos, .mapa-tres, .mapa-cuatro, .mapa-cinco, .mapa-seis {
-  width: 200px;
-  height: 200px;
-}*/
-/*.mapas {
-      display: flex;
-      justify-content:center;
-      align-items: center;
-}*/
-/*.contenedor-card, .contenedor-card2, .contenedor-card3, .contenedor-card4, .contenedor-card5, .contenedor-card6 {
-  width: 200px;
-
-}*/
 .grid-container > div {
   /*Box-modeling*/
   display: block;
   padding: 20px;
   font-size: 20px;
   text-align: center;
+}
+
+.grid-container {
+  /*Box-modeling*/
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  /*Activamos GRID*/
+  display: grid;
+  /*definimos la cantidad de filas y el alto de las mismas*/
+  grid-template-columns: 250px 250px 250px 250px;
+  /*definimos la cantidad de columnas y el anchode las mismas*/
+}
+
+.letras {
+  padding-top: 150px;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  width: 100%;
 }
 
 .marcas-a, .marcas-b {
@@ -406,28 +339,47 @@ header {
   padding: 25px 0px 0px 50px;
 }
 
-.letras {
-  padding-top: 150px;
-}
-
-/*Grid template areas*/
-/*tipografia*/
-/*Box-modeling*/
-/*Activamos grid*/
-/*grid areas*/
-/*Modificar la disposicion de nuestro grid areas para este breakpoint*/
-/*Nabvar con Flexbox*/
-.icon-frascos {
-  width: 100px;
-  border-radius: 50%;
-}
-
-nav {
-  margin-top: 10px;
+.contenedor {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.mapa {
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.iframesucur {
+  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-input {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-contacto {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 a {
@@ -460,13 +412,93 @@ a:visited {
   color: rgb(205, 7, 7);
 }
 
+/*.div-marcas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  margin: 10px;
+}
+*/
+
+/*Flexbox Teoría*/
+/*Contenedor Padre
+.flex-container {
+*/
+
+  /*Activamos flex
+  display: flex;
+  */
+
+  /*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna
+  flex-direction: row;
+  */
+
+  /*dispone los elementos flexibles en el eje principal
+  justify-content: center;
+  */
+
+  /*dispone los elementos flexibles en el eje secunadrio
+  align-items: center;
+  */
+
+  /*defino el desborde de los flex items
+  border: 5px solid #000;
+  padding: 15px 0px 20px 0px;
+  height: 400px;
+  margin: 50px;
+}*/
+
+/*.mapa-uno, .mapa-dos, .mapa-tres, .mapa-cuatro, .mapa-cinco, .mapa-seis {
+  width: 200px;
+  height: 200px;
+}*/
+/*.mapas {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+}*/
+/*.contenedor-card, .contenedor-card2, .contenedor-card3, .contenedor-card4, .contenedor-card5, .contenedor-card6 {
+  width: 200px;
+
+}*/
+
+/*Grid template areas*/
+/*tipografia*/
+/*Box-modeling*/
+/*Activamos grid*/
+/*grid areas*/
+/*Modificar la disposicion de nuestro grid areas para este breakpoint*/
+/*Nabvar con Flexbox*/
+/*.icon-frascos {
+  width: 100px;
+  border-radius: 50%;
+}
+*/
+
+
+
+/*nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+*/
+
+
 /*:nth-child(N)*/
 /*:nth-child(N) & nth-last-child*/
 /* .lista :nth-child(7){
   background-color: #00cdf1;
   color: #732aaf;
   font-size: 20px;
-} */
+} 
+*/
+
+
 /*posiciones impares*/
 /*posiciones pares*/
 /*First and last of type*/
@@ -474,18 +506,27 @@ a:visited {
   text-transform: uppercase;
   color: #d86812;
   background-color: #91e5a2;
-} */
+} 
+*/
+
+
 /* .elementos div:first-of-type {
   background-color: #70ece3;
   text-transform: capitalize;
   color: #b0b01f;
-} */
+} 
+*/
+
+
 /*Metodologia BEM*/
 /* .contenedor {
   max-width: 500px;
   width: 100%;
   margin: 20px;
-} */
+} 
+*/
+
+
 /*Bloque 1*/
 /* .tarjeta {
   width: 600px;
@@ -497,30 +538,45 @@ a:visited {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-} */
+} 
+*/
+
+
 /*Elemento 1*/
 /* .tarjeta_imagen {
   width: 60%;
-} */
+} 
+*/
+
+
 /*Elemento 2*/
 /* .tarjeta__textos {
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   margin-bottom: 20px;
   color: #000;
-} */
+} 
+*/
+
+
 /*Elemento 3*/
 /* .tarjeta__enlace {
   color: crimson;
   padding: 10px auto;
   font-size: 20px;
   text-transform: uppercase;
-} */
+} 
+*/
+
+
 /* .tarjeta__parrafo {
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 10px;
-} */
+} 
+*/
+
+
 /*Bloque 2*/
 /* .boton {
   background-color: #000;
@@ -532,7 +588,10 @@ a:visited {
   padding: 10px;
   border-radius: 100px;
   color: #fff;
-} */
+} 
+*/
+
+
 /*Modificador*/
 /*Mediaqueries*/
 /* @media screen and (max-width: 480px) {
@@ -561,14 +620,6 @@ gap: 10px; */
 ; */
 /* }
 } */
-.perfume-hombre-mujer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-  text-decoration: solid;
-  padding: 0px 20px 0px 20px;
-}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .titulo-prueba {
