@@ -18,43 +18,41 @@
 
 <body>
    <!--HTML SEMANTICO-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-success">
           <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="./assets (imagenes)/Logo Tienda.png" alt="logo-tienda" width="55" height="55">
               </a>
           </div>
           <div class="container-fluid">
-              <a class="navbar" href="./index.html">HOME</a>
+              <a class="navbar" href="./index.html">Home</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="./paginas/perfumes.html">PERFUMES</a>
+                          <a class="nav-link active" aria-current="page" href="./paginas/perfumes.html">Perfumes</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                          <a class="nav-link" href="./paginas/marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./paginas/contacto.html" aria-disabled="true">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Ver mas 
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="./paginas/promociones.html">Promociones</a></li>
+                            <li><a class="dropdown-item" href="./paginas/sucursales.html">Sucursales</a></li>
                           </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <input class="form-control me-3" type="search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
                     </form>
             </div>
           </div>
@@ -70,50 +68,92 @@
           <a href="./paginas/contacto.html" class="contacto">CONTACTO</a> -->
 
     <header>
+
+      <section class="fondo-creed">
        
           <div>
             <img src="./Assets (Imagenes)/Creed Perfumes.jpg" class="creed-perfumes" alt="creed-perfumes">
+            <img src="./assets (imagenes)/creed-botellas-de-perfume.jpg" class="creed-botellas" alt="creed-varios">
+            <img src="./assets (imagenes)/creed-varios.jpg" class="creed-varios" alt="creed-varios">
           </div>
-
-            <h4 class="creed-cuotas">12 CUOTAS SIN INTERES</h4>
-
-          <div class="boton-comprar-padre">
-            <button class="boton-comprar">COMPRAR</button>
-          </div>
+      
+      </section>
         
     </header>
+    <main>
+          
+            <h4 class="creed-cuotas">12 CUOTAS SIN INTERES</h4>
+
+              <div class="boton-comprar-padre">
+                <button class="boton-comprar">COMPRAR</button>
+              </div>
        
             <h3 class="ben-prom">BENEFICIOS Y PROMOCIONES</h3>
+
+        <section class="boton-dias">
+
+                <div>
+                    <button class="todos">Todos</button>
+                </div>
+                <div>
+                    <button class="lunes">Lunes</button>
+                </div>
+                <div>
+                    <button class="martes">Martes</button>
+                </div>
+                <div>
+                    <button class="miercoles">Miercoles</button>
+                </div>
+                <div>
+                    <button class="jueves">Jueves</button>
+                </div>
+                <div>
+                    <button class="viernes">Viernes</button>
+                </div>
+                <div>
+                    <button class="sabado">Sabado</button>
+                </div>
+                <div>
+                    <button class="domingo">Domingo</button>
+                </div>
+
+        </section>
+
           
-              <div class="flexi-container">
-                
-                    <div class="caj-c1">
-                      <img src="./Assets (Imagenes)/Bbva frances.webp" class="bbvafrances" alt="bbva-frances">
-                    </div>
-
-                    <div class="caj-c2">
-                        <img src="./Assets (Imagenes)/ICBC imagen.jpg" class="icbc" alt="icbc-imagen">
-                    </div>
-
-                    <div class="caj-c3">
-                        <img src="./Assets (Imagenes)/MODO.png" class="modo" alt="modo-imagen">
-                    </div>
-
-                    <div class="caj-c4">
-                        <img src="./Assets (Imagenes)/santander-logo.png" class="santander" alt="santander-banco">
-                    </div>
-
-                    <div class="caj-c5">
-                        <img src="./Assets (Imagenes)/logo-American-Express.png" class="american" alt="american">
-                    </div>
-
+          <div class="flexi-container">
+            
+              <div class="caj-c1">
+                  <img src="./assets (imagenes)/Bbva frances.webp" class="bbvafrances" alt="bbva-frances">
+                      <p>3 y 6 CUOTAS SIN INTERES</p>
               </div>
 
+              <div class="caj-c2">
+                  <img src="./assets (imagenes)/ICBC imagen.jpg" class="icbc" alt="icbc-imagen">
+                      <p>3 y 6 CUOTAS SIN INTERES</p>
+              </div>
+
+              <div class="caj-c3">
+                  <img src="./assets (imagenes)/MODO.png" class="modo" alt="modo-imagen">
+                      <p>3 y 6 CUOTAS SIN INTERES</p>
+              </div>
+
+              <div class="caj-c4">
+                  <img src="./assets (imagenes)/santander-logo.png" class="santander" alt="santander-banco">
+                      <p>3 6 Y 12 CUOTAS SIN INTERES</p>
+              </div>
+
+              <div class="caj-c5">
+                  <img src="./assets (imagenes)/logo-American-Express.png" class="american" alt="american">
+                      <p>3 6 Y 12 CUOTAS FIJAS</p>
+              </div>
+
+          </div>
+              
+              <div class="vermas-boton-padre">
                   <button class="vermaspro">VER MAS PROMOCIONES</button>
+              </div>
 
             <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">NEW ARRIWALS</h3>
-    
-    <main>
 
       <div class="new-arriwals">
         <img src="Assets (Imagenes)/Invictus New.webp" class="invictus"  alt="Invictus">
@@ -162,46 +202,46 @@
             
     </footer>
 
-          <div class="grid-container2">
-                
-                <div>
-                    <h6>Contacto</h6>
-                        <p>Lunes a Viernes de 9 a 18hs</p>
-                        <p>0800-000-0000</p>
-                        <p>11-5555-5555</p>
-                </div>
-                <div>
-                    <h6>Mas sobre Tienda de Perfumes</h6>
-                        <p>Sucursales</p>
-                        <p>Contactate con nosotros</p>
-                        <p>Ventas especiales</p>
-                        <p>Hot Sale</p>
-                        <p>Cyber Monday</p>
-                        <p>Black Friday</p>
-                </div>
-                <div>
-                    <h6>Best Sellers</h6>
-                        <p>Fragancias</p>
-                        <p>Maquillaje</p>
-                        <p>Tratamiento</p>
-                        <p>Electro beauty</p>
-                        <p>Regalos por compra</p>
-                        <p>Beauty Deals</p>
-                        <p>Exclusivo Tienda de Perfumes</p>
-                </div>
-                <div>
-                  <h6>Ayuda</h6>
-                      <p>Preguntas Frecuentes</p>
-                      <p>Beneficios y Formas de Pago</p>
-                      <p>Metodos de envio</p>
-                      <p>Terminos y condiciones</p>
-                      <p>Cambios y Devoluciones</p>
-                      <p>Seguimiento de envio</p>
-                      <p>Defensa al consumidor CABA</p>
-                      <p>COPREC</p>
-                      <button>Boton de Arrepentimiento</button>
-                </div>
-          </div>
+            <div class="grid-container2">
+                  
+                  <div>
+                      <h6>Contacto</h6>
+                          <p>Lunes a Viernes de 9 a 18hs</p>
+                          <p>0800-000-0000</p>
+                          <p>11-5555-5555</p>
+                  </div>
+                  <div>
+                      <h6>Mas sobre Tienda de Perfumes</h6>
+                          <p>Sucursales</p>
+                          <p>Contactate con nosotros</p>
+                          <p>Ventas especiales</p>
+                          <p>Hot Sale</p>
+                          <p>Cyber Monday</p>
+                          <p>Black Friday</p>
+                  </div>
+                  <div>
+                      <h6>Best Sellers</h6>
+                          <p>Fragancias</p>
+                          <p>Maquillaje</p>
+                          <p>Tratamiento</p>
+                          <p>Electro beauty</p>
+                          <p>Regalos por compra</p>
+                          <p>Beauty Deals</p>
+                          <p>Exclusivo Tienda de Perfumes</p>
+                  </div>
+                  <div>
+                    <h6>Ayuda</h6>
+                        <p>Preguntas Frecuentes</p>
+                        <p>Beneficios y Formas de Pago</p>
+                        <p>Metodos de envio</p>
+                        <p>Terminos y condiciones</p>
+                        <p>Cambios y Devoluciones</p>
+                        <p>Seguimiento de envio</p>
+                        <p>Defensa al consumidor CABA</p>
+                        <p>COPREC</p>
+                        <button>Boton de Arrepentimiento</button>
+                  </div>
+            </div>
 
 
           <!--Bootstrap JS-->
