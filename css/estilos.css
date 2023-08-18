@@ -393,7 +393,7 @@ footer {
   position: relative;
   background: transparent;
   border: 2px solid;
-  box-shadow: 0 0 30px #3ce908;
+  box-shadow: 0 0 30px;
   overflow: hidden;
   font-family: 'fuente-principal';
 
@@ -412,7 +412,10 @@ footer {
 }
 
 .letras {
-  padding-top: 150px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 
 /*
@@ -424,7 +427,7 @@ main {
 }
 */
 
-.marcas-a, .marcas-b {
+.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -433,15 +436,23 @@ main {
   margin: 20px;
 }
 
-.h4a, .h4b {
+.h4a, .h4b, .h4c, .h4d, .h4e, .h4f {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 0px 0px 50px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous {
   padding: 25px 0px 0px 50px;
+}
+
+.marcas-contpadre1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contenedor {
