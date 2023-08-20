@@ -336,6 +336,13 @@ footer {
   width: 20px;
 }
 
+.perfumes-clases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .givenchy, .givenchym, .carolinah {
   width: 100px;
   display: flex;
@@ -364,10 +371,46 @@ footer {
 .perfume-hombre-mujer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   text-decoration: solid;
   padding: 0px 20px 0px 20px;
+}
+
+.perf-hombre, .perf-mujer, .perf-unisex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.contenedor-perfumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.perfumes-grilla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  background: transparent;
+  border: 2px solid;
+  box-shadow: 0 0 30px #000;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .dol-gab-grilla4, .dol-gab-grilla5 {
+  width: 150px;
 }
 
 /*CSS GRID PRACTICA*/
