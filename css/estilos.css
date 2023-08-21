@@ -519,23 +519,42 @@ main {
 
 h2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
+  margin-right: 37%;
+  color: #fff;
+}
+
+.ayuda-contacto {
+  color: #fff;
 }
 
 .div-input {
   padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin-right: 35%;
+  color: #fff;
+}
+
+.contacto-h {
+  padding-top: 50px;
+}
+
+.fondo-contacto {
+  background-image: url(https://www.xtrafondos.com/descargar.php?id=7078&resolucion=3840x2160);
+  background-size: cover;
 }
 
 .p-contacto {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: start;
+  color: #fff;
 }
 
 /*Gradientes*/
