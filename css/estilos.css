@@ -117,7 +117,6 @@ $lista1; red, green, yellow, blue;
   font-family: "fuente-principal";
   src: url(../Fuentes/Roboto-Medium.ttf);
 }
-
 /*Selector de tipo ID*/
 /*Propiedad*/
 /*.imglogo {
@@ -127,13 +126,11 @@ $lista1; red, green, yellow, blue;
   padding-top: 18px;
 }
 */
-
 /*.home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
 }
 */
-
 .container-fluid {
   font-size: 20px;
 }
@@ -155,13 +152,13 @@ $lista1; red, green, yellow, blue;
   color: #fff;
 }
 
-.boton-comprar {
+.boton-comprar, .boton-enviar {
   width: 100px;
   font-size: 15px;
   font-weight: 600;
-  font-family: 'fuente-principal';
+  font-family: "fuente-principal";
   border-radius: 100px;
-  background-color: #3fbda8;
+  background-color: #6610f2;
   color: #000;
   display: flex;
   flex-direction: row;
@@ -169,30 +166,17 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
-.boton-comprar-padre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  animation-name: boton-comprar-anime;
-  animation-iteration-count: 3;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-delay: 4s;
-}
-
 @keyframes boton-comprar-anime {
-
-  0%{
+  0% {
     width: 25%;
   }
-  50%{
+  50% {
     width: 50%;
   }
-  100%{
+  100% {
     width: 100%;
   }
 }
-
 .ben-prom, .titulo-sucursales {
   display: flex;
   flex-direction: row;
@@ -200,7 +184,7 @@ $lista1; red, green, yellow, blue;
   align-items: center;
   padding: 20px 0px 20px 0px;
   margin-top: 50px;
-  background-color: aquamarine;
+  background-color: #6610f2;
 }
 
 .boton-dias {
@@ -214,7 +198,7 @@ $lista1; red, green, yellow, blue;
   margin-left: 20px;
   border-radius: 100px;
   width: 100px;
-  font-family: 'fuente-principal';
+  font-family: "fuente-principal";
   font-size: 15px;
   background-color: #000;
   color: #fff;
@@ -254,7 +238,7 @@ $lista1; red, green, yellow, blue;
   margin: 5px;
 }
 */
-.vermas-boton-padre {
+.vermas-boton-padre, .boton-comprar-padre {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -268,25 +252,23 @@ $lista1; red, green, yellow, blue;
 }
 
 @keyframes boton-vermas-anime {
-
-  0%{
+  0% {
     width: 25%;
   }
-  50%{
+  50% {
     width: 50%;
   }
-  100%{
+  100% {
     width: 100%;
   }
 }
-
-.vermaspro {
+.vermaspro, .boton-borrar {
   width: 200px;
   font-size: 15px;
   font-weight: 600;
-  font-family: 'fuente-principal';
+  font-family: "fuente-principal";
   border-radius: 100px;
-  background-color: #3fbda8;
+  background-color: #6610f2;
   color: #000;
   display: flex;
   flex-direction: row;
@@ -314,7 +296,7 @@ $lista1; red, green, yellow, blue;
 
 .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
   width: 300px;
-  margin-left: 15px
+  margin-left: 15px;
 }
 
 iframe {
@@ -323,7 +305,7 @@ iframe {
   padding-top: 25px;
   justify-content: flex-end;
   align-items: end;
-  margin-left: 15px
+  margin-left: 15px;
 }
 
 footer {
@@ -383,6 +365,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  color: #0dcaf0;
 }
 
 .contenedor-perfumes {
@@ -447,8 +430,7 @@ footer {
   border: 2px solid;
   box-shadow: 0 0 30px;
   overflow: hidden;
-  font-family: 'fuente-principal';
-
+  font-family: "fuente-principal";
 }
 
 .grid-container {
@@ -478,7 +460,6 @@ main {
   width: 100%;
 }
 */
-
 .marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f {
   display: flex;
   flex-direction: column;
@@ -653,12 +634,12 @@ a {
 /*Pseudoclases*/
 a:hover {
   font-size: 20px;
-  background-color: #309e63;
+  background-color: #6610f2;
   border-bottom: 3px solid;
 }
 
 a:active {
-  background-color: #25e78f;
+  background-color: #6610f2;
   color: #fff;
   padding: 10px;
 }
@@ -668,13 +649,11 @@ a:link {
   color: #1f43b0;
 }
 */
-
 /*
 a:visited {
   color: rgb(205, 7, 7);
 }
 */
-
 /*.div-marcas {
   display: flex;
   flex-direction: column;
@@ -850,20 +829,17 @@ gap: 10px; */
 ; */
 /* }
 } */
-
 /*@media screen and (min-width: 1024px) and (max-width: 1328px) { */
-  /*
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-    */
-  
-
+/*
+.titulo-prueba {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: #732aaf;
+  font-weight: lighter;
+  border: 2px groove #000;
+  margin-left: 20px;
+  margin-top: 20px;
+  */
 @media screen and (min-width: 1200px) {
   /*
   .titulo-prueba {
@@ -875,8 +851,7 @@ gap: 10px; */
     margin-left: 20px;
     margin-top: 20px;
     */
-  }
-
+}
 @media screen and (min-width: 768px) {
   /*
   .titulo-prueba {
@@ -889,7 +864,6 @@ gap: 10px; */
     margin-top: 20px;
   */
 }
-
 @media screen and (max-width: 767px) {
   .flexi-container {
     display: flex;
@@ -901,17 +875,15 @@ gap: 10px; */
     margin: auto;
     height: auto;
   }
-
   .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
     margin-left: auto;
     border-radius: 100px;
     width: 100px;
-    font-family: 'fuente-principal';
+    font-family: "fuente-principal";
     font-size: 15px;
     background-color: #000;
     color: #fff;
   }
-
   /*
   .titulo-prueba {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -924,9 +896,6 @@ gap: 10px; */
   }
   */
 }
-
-
-
 
 
 /*# sourceMappingURL=estilos.css.map */

@@ -161,7 +161,7 @@ $lista1; red, green, yellow, blue;
 
 .boton-comprar {
   width: 100px;
-  font-size: 15px;
+  font-size: $relleno;
   font-weight: 600;
   font-family: 'fuente-principal';
   border-radius: 100px;
@@ -174,14 +174,7 @@ $lista1; red, green, yellow, blue;
 }
 
 .boton-comprar-padre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  animation-name: boton-comprar-anime;
-  animation-iteration-count: 3;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-delay: 4s;
+  @extend .vermas-boton-padre
 }
 
 @keyframes boton-comprar-anime {
@@ -204,7 +197,7 @@ $lista1; red, green, yellow, blue;
   align-items: center;
   padding: 20px 0px 20px 0px;
   margin-top: 50px;
-  background-color: aquamarine;
+  background-color: $indigo-400;
 }
 
 .boton-dias {
@@ -286,11 +279,11 @@ $lista1; red, green, yellow, blue;
 
 .vermaspro {
   width: 200px;
-  font-size: 15px;
+  font-size: $relleno;
   font-weight: 600;
   font-family: 'fuente-principal';
   border-radius: 100px;
-  background-color: #3fbda8;
+  background-color: $indigo-400;
   color: #000;
   display: flex;
   flex-direction: row;
@@ -318,7 +311,7 @@ $lista1; red, green, yellow, blue;
 
 .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
   width: 300px;
-  margin-left: 15px
+  margin-left: $relleno;
 }
 
 iframe {
@@ -327,7 +320,7 @@ iframe {
   padding-top: 25px;
   justify-content: flex-end;
   align-items: end;
-  margin-left: 15px
+  margin-left: $relleno;
 }
 
 footer {
@@ -387,6 +380,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  color: $cyan-500;
 }
 
 .contenedor-perfumes {
@@ -418,7 +412,7 @@ footer {
 }
 
 .titulo-grilla {
-  font-size: 15px;
+  font-size: $relleno;
   font-weight: 700;
 }
 
@@ -546,11 +540,19 @@ h2 {
   align-items: center;
 }
 
+.boton-borrar {
+  @extend .vermaspro
+}
+
 .div-input {
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.boton-enviar {
+  @extend .boton-comprar
 }
 
 .p-contacto {
@@ -657,12 +659,12 @@ a {
 /*Pseudoclases*/
 a:hover {
   font-size: 20px;
-  background-color: #309e63;
+  background-color: $indigo-400;
   border-bottom: 3px solid;
 }
 
 a:active {
-  background-color: #25e78f;
+  background-color: $indigo-400;
   color: #fff;
   padding: 10px;
 }
