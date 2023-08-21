@@ -6,6 +6,10 @@
 @import "footer"
 */
 /*Variables globales*/
+$indigo-400: #6610f2;
+$cyan-500: #0dcaf0;
+$relleno: 15px;
+$fuente-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 /*
 $relleno: 20px;
 $fuente-principal: arial, helvetica, sans-serif;
@@ -30,7 +34,6 @@ $color-secundario: #e9e91e;
     padding: ($relleno + 100 * 10;
 }
 */
-
 /* Personalizar varias etiquetas
 
   nav ul ui a {
@@ -106,7 +109,6 @@ $lista1; red, green, yellow, blue;
 }
 
 */
-
 /*Selector Reset o Universal*/
 * {
   margin: 0;
@@ -119,46 +121,107 @@ $lista1; red, green, yellow, blue;
   font-family: "fuente-principal";
   src: url(../Fuentes/Roboto-Medium.ttf);
 }
+
 /*Selector de tipo ID*/
 /*Propiedad*/
-.imglogo {
+/*.imglogo {
   width: 70px;
   padding-left: 70px;
   padding-bottom: 15px;
   padding-top: 18px;
 }
+*/
 
-.home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
+/*.home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
 }
+*/
 
-.creed-perfumes {
-  width: 35%;
+.container-fluid {
+  font-size: 20px;
+}
+
+.fondo-creed {
+  background-color: #000;
+}
+
+.creed-perfumes, .creed-botellas, .creed-varios {
+  width: 30%;
+  margin-left: 30px;
 }
 
 .creed-cuotas {
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  align-items: flex-end;
-  padding: 0px 30% 0px 0px;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
 }
 
 .boton-comprar {
+  width: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'fuente-principal';
+  border-radius: 100px;
+  background-color: $indigo-400;
+  color: #000;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-.ben-prom {
+.boton-comprar-padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation-name: boton-comprar-anime;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes boton-comprar-anime {
+
+  0%{
+    width: 25%;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.ben-prom, .titulo-sucursales {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px 0px 20px 0px;
   margin-top: 50px;
+  background-color: aquamarine;
+}
+
+.boton-dias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+  margin-left: 20px;
+  border-radius: 100px;
+  width: 100px;
+  font-family: 'fuente-principal';
+  font-size: 15px;
+  background-color: #000;
+  color: #fff;
 }
 
 .flexi-container {
@@ -195,12 +258,44 @@ $lista1; red, green, yellow, blue;
   margin: 5px;
 }
 */
-
-.vermaspro {
+.vermas-boton-padre {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  padding-bottom: 25px;
+  animation-name: boton-vermas-anime;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes boton-vermas-anime {
+
+  0%{
+    width: 25%;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.vermaspro {
+  width: 200px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'fuente-principal';
+  border-radius: 100px;
+  background-color: #3fbda8;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .new-arriwals {
@@ -223,6 +318,7 @@ $lista1; red, green, yellow, blue;
 
 .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
   width: 300px;
+  margin-left: 15px
 }
 
 iframe {
@@ -231,6 +327,7 @@ iframe {
   padding-top: 25px;
   justify-content: flex-end;
   align-items: end;
+  margin-left: 15px
 }
 
 footer {
@@ -241,6 +338,13 @@ footer {
 
 .Whatsapp, .Facebook, .Instagram {
   width: 20px;
+}
+
+.perfumes-clases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .givenchy, .givenchym, .carolinah {
@@ -271,10 +375,55 @@ footer {
 .perfume-hombre-mujer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   text-decoration: solid;
   padding: 0px 20px 0px 20px;
+}
+
+.perf-hombre, .perf-mujer, .perf-unisex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.contenedor-perfumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+}
+
+.perfumes-grilla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  background: transparent;
+  border: 2px solid;
+  box-shadow: 0 0 30px #000;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .dol-gab-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
+  width: 150px;
+}
+
+.titulo-grilla {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cuotas-grilla {
+  font-weight: 500;
 }
 
 /*CSS GRID PRACTICA*/
@@ -290,10 +439,20 @@ footer {
 
 .grid-container > div {
   /*Box-modeling*/
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   font-size: 20px;
   text-align: center;
+  position: relative;
+  background: transparent;
+  border: 2px solid;
+  box-shadow: 0 0 30px;
+  overflow: hidden;
+  font-family: 'fuente-principal';
+
 }
 
 .grid-container {
@@ -309,17 +468,22 @@ footer {
 }
 
 .letras {
-  padding-top: 150px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 
+/*
 main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
   width: 100%;
 }
+*/
 
-.marcas-a, .marcas-b {
+.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -328,15 +492,23 @@ main {
   margin: 20px;
 }
 
-.h4a, .h4b {
+.h4a, .h4b, .h4c, .h4d, .h4e, .h4f {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 0px 0px 50px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous {
   padding: 25px 0px 0px 50px;
+}
+
+.marcas-contpadre1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contenedor {
@@ -351,14 +523,21 @@ main {
   width: 25%;
   margin: 10px;
   padding: 20px;
+  position: relative;
+  background: transparent;
+  border: 2px solid;
+  box-shadow: 0 0 30px #000;
+  overflow: hidden;
+  margin-top: 100px;
 }
 
 .iframesucur {
   width: 100%;
   display: flex;
+  flex-direction: row;
   padding-top: 25px;
-  justify-content: flex-end;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -383,37 +562,27 @@ h2 {
 }
 
 /*Gradientes*/
-  
 /*background-image: linear-gradient(to bottom blue, white, green);
 */
-  
 /*background-image: radial-gradient(ellipse, red, yellow);
 */
-
 /*.givenchyprueba {
   width: 20%; */
-  /*Transformaciones*/
-  
-  /*transform: translateX(100px);
-  */
-  
-  /*
-  transform: translateY(200px);
-  */
- 
-  /*
-  transform: rotate(90deg);
-  */
-  
-  /*
-  transform: scale(2,3);
-  */
-   
-  /*
-  transform: skew(30deg);
-  */
-  
-
+/*Transformaciones*/
+/*transform: translateX(100px);
+*/
+/*
+transform: translateY(200px);
+*/
+/*
+transform: rotate(90deg);
+*/
+/*
+transform: scale(2,3);
+*/
+/*
+transform: skew(30deg);
+*/
 /*
 .boton-prueba {
   background: #000;
@@ -427,17 +596,14 @@ h2 {
   color: #fff;
   margin-top: 10px;
 */
-
-  /*transicion
+/*transicion
   transition: width 3s;
 
 }*/
-
 /*.boton-prueba:hover {
   width: 110%;
 }
 */
-
 /*Animaciones
 
 .whatsapp-prueba {
@@ -449,9 +615,8 @@ h2 {
   animation-delay: 3s;
 }
 */
-
 /*@keyframes logo-whatsapp-anime{
-  
+
   ejemplo 1
   0%{
     width: 100px;
@@ -468,11 +633,10 @@ h2 {
   100%{
     width: 100px;
   }
-  
-}*/
 
+}*/
 /*@keyframes logo-whatsapp-anime{
-  
+
   ejemplo 2
   0%{
     transform: rotate(0);
@@ -482,7 +646,6 @@ h2 {
   }
 
 }*/
-
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -494,24 +657,27 @@ a {
 /*Pseudoclases*/
 a:hover {
   font-size: 20px;
-  color: #1b961b;
-  border-bottom: 3px solid #000;
-  background-color: #3fbda8;
+  background-color: #309e63;
+  border-bottom: 3px solid;
 }
 
 a:active {
-  background-color: #c16666;
-  color: #000;
+  background-color: #25e78f;
+  color: #fff;
   padding: 10px;
 }
 
+/*
 a:link {
   color: #1f43b0;
 }
+*/
 
+/*
 a:visited {
   color: rgb(205, 7, 7);
 }
+*/
 
 /*.div-marcas {
   display: flex;
@@ -522,35 +688,28 @@ a:visited {
   margin: 10px;
 }
 */
-
 /*Flexbox Teoría*/
 /*Contenedor Padre
 .flex-container {
 */
-
-  /*Activamos flex
-  display: flex;
-  */
-
-  /*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna
-  flex-direction: row;
-  */
-
-  /*dispone los elementos flexibles en el eje principal
-  justify-content: center;
-  */
-
-  /*dispone los elementos flexibles en el eje secunadrio
-  align-items: center;
-  */
-
-  /*defino el desborde de los flex items
+/*Activamos flex
+display: flex;
+*/
+/*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna
+flex-direction: row;
+*/
+/*dispone los elementos flexibles en el eje principal
+justify-content: center;
+*/
+/*dispone los elementos flexibles en el eje secunadrio
+align-items: center;
+*/
+/*defino el desborde de los flex items
   border: 5px solid #000;
   padding: 15px 0px 20px 0px;
   height: 400px;
   margin: 50px;
 }*/
-
 /*.mapa-uno, .mapa-dos, .mapa-tres, .mapa-cuatro, .mapa-cinco, .mapa-seis {
   width: 200px;
   height: 200px;
@@ -564,7 +723,6 @@ a:visited {
   width: 200px;
 
 }*/
-
 /*Grid template areas*/
 /*tipografia*/
 /*Box-modeling*/
@@ -577,9 +735,6 @@ a:visited {
   border-radius: 50%;
 }
 */
-
-
-
 /*nav {
   margin-top: 10px;
   display: flex;
@@ -588,8 +743,6 @@ a:visited {
   align-items: center;
 }
 */
-
-
 /*:nth-child(N)*/
 /*:nth-child(N) & nth-last-child*/
 /* .lista :nth-child(7){
@@ -598,8 +751,6 @@ a:visited {
   font-size: 20px;
 } 
 */
-
-
 /*posiciones impares*/
 /*posiciones pares*/
 /*First and last of type*/
@@ -609,16 +760,12 @@ a:visited {
   background-color: #91e5a2;
 } 
 */
-
-
 /* .elementos div:first-of-type {
   background-color: #70ece3;
   text-transform: capitalize;
   color: #b0b01f;
 } 
 */
-
-
 /*Metodologia BEM*/
 /* .contenedor {
   max-width: 500px;
@@ -626,8 +773,6 @@ a:visited {
   margin: 20px;
 } 
 */
-
-
 /*Bloque 1*/
 /* .tarjeta {
   width: 600px;
@@ -641,15 +786,11 @@ a:visited {
   gap: 20px;
 } 
 */
-
-
 /*Elemento 1*/
 /* .tarjeta_imagen {
   width: 60%;
 } 
 */
-
-
 /*Elemento 2*/
 /* .tarjeta__textos {
   font-family: 'Courier New', Courier, monospace;
@@ -658,8 +799,6 @@ a:visited {
   color: #000;
 } 
 */
-
-
 /*Elemento 3*/
 /* .tarjeta__enlace {
   color: crimson;
@@ -668,16 +807,12 @@ a:visited {
   text-transform: uppercase;
 } 
 */
-
-
 /* .tarjeta__parrafo {
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 10px;
 } 
 */
-
-
 /*Bloque 2*/
 /* .boton {
   background-color: #000;
@@ -691,8 +826,6 @@ a:visited {
   color: #fff;
 } 
 */
-
-
 /*Modificador*/
 /*Mediaqueries*/
 /* @media screen and (max-width: 480px) {
@@ -722,7 +855,68 @@ gap: 10px; */
 /* }
 } */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+/*@media screen and (min-width: 1024px) and (max-width: 1328px) { */
+  /*
+  .titulo-prueba {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    color: #732aaf;
+    font-weight: lighter;
+    border: 2px groove #000;
+    margin-left: 20px;
+    margin-top: 20px;
+    */
+  
+
+@media screen and (min-width: 1200px) {
+  /*
+  .titulo-prueba {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    color: #732aaf;
+    font-weight: lighter;
+    border: 2px groove #000;
+    margin-left: 20px;
+    margin-top: 20px;
+    */
+  }
+
+@media screen and (min-width: 768px) {
+  /*
+  .titulo-prueba {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    color: #732aaf;
+    font-weight: lighter;
+    border: 2px groove #000;
+    margin-left: 20px;
+    margin-top: 20px;
+  */
+}
+
+@media screen and (max-width: 767px) {
+  .flexi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: auto;
+    margin: auto;
+    height: auto;
+  }
+
+  .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+    margin-left: auto;
+    border-radius: 100px;
+    width: 100px;
+    font-family: 'fuente-principal';
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  /*
   .titulo-prueba {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 22px;
@@ -732,39 +926,11 @@ gap: 10px; */
     margin-left: 20px;
     margin-top: 20px;
   }
+  */
 }
-@media screen and (min-width: 480px) and (max-width: 960px) {
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-}
-@media screen and (min-width: 960px) and (max-width: 1024px) {
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1328px) {
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-}
+
+
+
+
 
 /*# sourceMappingURL=estilos.css.map */
