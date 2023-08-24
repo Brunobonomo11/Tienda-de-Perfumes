@@ -858,31 +858,73 @@ gap: 10px; */
   margin-left: 20px;
   margin-top: 20px;
   */
-@media screen and (min-width: 1200px) {
-  /*
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-    */
+@media screen and (min-width: 1201px) {
+  
+  .flexi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+  }
+  .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+    margin-left: auto;
+    border-radius: 100px;
+    width: 100px;
+    font-family: "fuente-principal";
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .boton-dias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .new-arriwals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: 15px 0px 20px 0px;
+    margin: 50px;
+  }
+
+  .versace-dos, .calvin-klein, .dior-seiscuotas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "fuente principal";
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+  }
 }
-@media screen and (min-width: 768px) {
-  /*
-  .titulo-prueba {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
-  */
-}
-@media screen and (max-width: 767px) {
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  
   .flexi-container {
     display: flex;
     flex-direction: column;
@@ -902,6 +944,119 @@ gap: 10px; */
     background-color: #000;
     color: #fff;
   }
+
+  .boton-dias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .new-arriwals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: 15px 0px 20px 0px;
+    margin: 50px;
+  }
+
+  .versace-dos, .calvin-klein, .dior-seiscuotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "fuente principal";
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+  .flexi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: auto;
+    margin: auto;
+    height: auto;
+  }
+  .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+    margin-left: auto;
+    border-radius: 100px;
+    width: 100px;
+    font-family: "fuente-principal";
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .boton-dias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .new-arriwals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: 15px 0px 20px 0px;
+    margin: 50px;
+  }
+
+  .versace-dos, .calvin-klein, .dior-seiscuotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "fuente principal";
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px;
+  }
+
   /*
   .titulo-prueba {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
