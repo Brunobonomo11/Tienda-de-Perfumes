@@ -117,20 +117,7 @@ $lista1; red, green, yellow, blue;
   font-family: "fuente-principal";
   src: url(../Fuentes/Roboto-Medium.ttf);
 }
-/*Selector de tipo ID*/
-/*Propiedad*/
-/*.imglogo {
-  width: 70px;
-  padding-left: 70px;
-  padding-bottom: 15px;
-  padding-top: 18px;
-}
-*/
-/*.home, .perfumes, .marcas, .promociones, .sucursales, .contacto {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 15px;
-}
-*/
+
 .container-fluid {
   font-size: 20px;
 }
@@ -227,17 +214,6 @@ $lista1; red, green, yellow, blue;
   width: 200px;
 }
 
-/*
-.caja-c1, .caja-c2, .caja-c3, .caja-c4, .caja-c5 { 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-}
-*/
 .vermas-boton-padre, .boton-comprar-padre {
   display: flex;
   flex-direction: row;
@@ -451,14 +427,6 @@ footer {
   font-size: 50px;
 }
 
-/*
-main {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-  width: 100%;
-}
-*/
 .marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g {
   display: flex;
   flex-direction: column;
@@ -556,91 +524,7 @@ h2 {
   color: #fff;
 }
 
-/*Gradientes*/
-/*background-image: linear-gradient(to bottom blue, white, green);
-*/
-/*background-image: radial-gradient(ellipse, red, yellow);
-*/
-/*.givenchyprueba {
-  width: 20%; */
-/*Transformaciones*/
-/*transform: translateX(100px);
-*/
-/*
-transform: translateY(200px);
-*/
-/*
-transform: rotate(90deg);
-*/
-/*
-transform: scale(2,3);
-*/
-/*
-transform: skew(30deg);
-*/
-/*
-.boton-prueba {
-  background: #000;
-  display: block;
-  width: 100%;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 100px;
-  color: #fff;
-  margin-top: 10px;
-*/
-/*transicion
-  transition: width 3s;
 
-}*/
-/*.boton-prueba:hover {
-  width: 110%;
-}
-*/
-/*Animaciones
-
-.whatsapp-prueba {
-  width: 100px;
-  animation-name: logo-whatsapp-anime;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-out;
-  animation-duration: 2s;
-  animation-delay: 3s;
-}
-*/
-/*@keyframes logo-whatsapp-anime{
-
-  ejemplo 1
-  0%{
-    width: 100px;
-  }
-  25%{
-    width: 50px;
-  }
-  50%{
-    width: 200px;
-  }
-  75%{
-    width: 300px;
-  }
-  100%{
-    width: 100px;
-  }
-
-}*/
-/*@keyframes logo-whatsapp-anime{
-
-  ejemplo 2
-  0%{
-    transform: rotate(0);
-  }
-  100%{
-    transform: rotate(380deg);
-  }
-
-}*/
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
