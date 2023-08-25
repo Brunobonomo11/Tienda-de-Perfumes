@@ -459,7 +459,7 @@ main {
   width: 100%;
 }
 */
-.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f {
+.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -468,14 +468,14 @@ main {
   margin: 20px;
 }
 
-.h4a, .h4b, .h4c, .h4d, .h4e, .h4f {
+.h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 0px 0px 50px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas {
   padding: 25px 0px 0px 50px;
 }
 
@@ -662,203 +662,74 @@ a:active {
   padding: 10px;
 }
 
-/*
-a:link {
-  color: #1f43b0;
-}
-*/
-/*
-a:visited {
-  color: rgb(205, 7, 7);
-}
-*/
-/*.div-marcas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px 20px 0px;
-  margin: 10px;
-}
-*/
-/*Flexbox Teoría*/
-/*Contenedor Padre
-.flex-container {
-*/
-/*Activamos flex
-display: flex;
-*/
-/*definimos cual va a ser nuestro Main Axis y cual, o si sera fila o columna
-flex-direction: row;
-*/
-/*dispone los elementos flexibles en el eje principal
-justify-content: center;
-*/
-/*dispone los elementos flexibles en el eje secunadrio
-align-items: center;
-*/
-/*defino el desborde de los flex items
-  border: 5px solid #000;
-  padding: 15px 0px 20px 0px;
-  height: 400px;
-  margin: 50px;
-}*/
-/*.mapa-uno, .mapa-dos, .mapa-tres, .mapa-cuatro, .mapa-cinco, .mapa-seis {
-  width: 200px;
-  height: 200px;
-}*/
-/*.mapas {
-      display: flex;
-      justify-content:center;
-      align-items: center;
-}*/
-/*.contenedor-card, .contenedor-card2, .contenedor-card3, .contenedor-card4, .contenedor-card5, .contenedor-card6 {
-  width: 200px;
 
-}*/
-/*Grid template areas*/
-/*tipografia*/
-/*Box-modeling*/
-/*Activamos grid*/
-/*grid areas*/
-/*Modificar la disposicion de nuestro grid areas para este breakpoint*/
-/*Nabvar con Flexbox*/
-/*.icon-frascos {
-  width: 100px;
-  border-radius: 50%;
-}
-*/
-/*nav {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-*/
-/*:nth-child(N)*/
-/*:nth-child(N) & nth-last-child*/
-/* .lista :nth-child(7){
-  background-color: #00cdf1;
-  color: #732aaf;
-  font-size: 20px;
-} 
-*/
-/*posiciones impares*/
-/*posiciones pares*/
-/*First and last of type*/
-/* .elementos p:last-of-type {
-  text-transform: uppercase;
-  color: #d86812;
-  background-color: #91e5a2;
-} 
-*/
-/* .elementos div:first-of-type {
-  background-color: #70ece3;
-  text-transform: capitalize;
-  color: #b0b01f;
-} 
-*/
-/*Metodologia BEM*/
-/* .contenedor {
-  max-width: 500px;
-  width: 100%;
-  margin: 20px;
-} 
-*/
-/*Bloque 1*/
-/* .tarjeta {
-  width: 600px;
-  border: 5px double #ccc;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-} 
-*/
-/*Elemento 1*/
-/* .tarjeta_imagen {
-  width: 60%;
-} 
-*/
-/*Elemento 2*/
-/* .tarjeta__textos {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #000;
-} 
-*/
-/*Elemento 3*/
-/* .tarjeta__enlace {
-  color: crimson;
-  padding: 10px auto;
-  font-size: 20px;
-  text-transform: uppercase;
-} 
-*/
-/* .tarjeta__parrafo {
-  font-size: 16px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-} 
-*/
-/*Bloque 2*/
-/* .boton {
-  background-color: #000;
-  display: block;
-  width: 100px;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 100px;
-  color: #fff;
-} 
-*/
-/*Modificador*/
-/*Mediaqueries*/
-/* @media screen and (max-width: 480px) {
-  .contenedor-grid {
-      /*tipografia*/
-/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 25px;
-font-weight: bold; */
-/*Box-modeling*/
-/* width: 90%;
-height: 600px;
-margin: 40px auto;
-border: 5px groove #fff; */
-/*Activamos grid*/
-/* display: grid;
-grid-template-columns: 100%;
-grid-template-rows: repeat(5,auto);
-gap: 10px; */
-/*grid areas*/
-/* grid-template-areas: 
-"header"
-"main"
-"aside"
-"nav"
-"footer"
-; */
-/* }
-} */
-/*@media screen and (min-width: 1024px) and (max-width: 1328px) { */
-/*
-.titulo-prueba {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-  color: #732aaf;
-  font-weight: lighter;
-  border: 2px groove #000;
-  margin-left: 20px;
-  margin-top: 20px;
-  */
+
 @media screen and (min-width: 1201px) {
+  
+  .flexi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+  }
+  .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+    margin-left: auto;
+    border-radius: 100px;
+    width: 100px;
+    font-family: "fuente-principal";
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .boton-dias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .new-arriwals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #000;
+    padding: 15px 0px 20px 0px;
+    margin: 50px;
+  }
+
+  .versace-dos, .calvin-klein, .dior-seiscuotas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container2 {
+    width: 100%;
+    max-width: 1900px;
+    padding-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-family: "fuente principal";
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   
   .flexi-container {
     display: flex;
@@ -987,8 +858,94 @@ gap: 10px; */
     display: grid;
     grid-template-columns: 190px 190px 190px 190px;
   }
-}
 
+  .contenedor-perfumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .perfumes-grilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    background: transparent;
+    border: 2px solid;
+    box-shadow: 0 0 30px #000;
+    overflow: hidden;
+  }
+
+  .perfumes-clases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfume-hombre-mujer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: solid;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .categoria-perfumes {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 270px;
+  }
+
+  .grid-container > div {
+    /*Box-modeling*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid;
+    box-shadow: 0 0 30px;
+    overflow: hidden;
+    font-family: "fuente-principal";
+  }
+  
+  .grid-container {
+    /*Box-modeling*/
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /*Activamos GRID*/
+    display: grid;
+    /*definimos la cantidad de filas y el alto de las mismas*/
+    grid-template-columns: 190px 190px 190px 190px;
+    /*definimos la cantidad de columnas y el anchode las mismas*/
+  }
+
+  .marcas-contpadre1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-left: 250px;
+  }
+}
 
 
 
@@ -1057,17 +1014,92 @@ gap: 10px; */
     grid-template-columns: 190px 190px 190px 190px;
   }
 
-  /*
-  .titulo-prueba {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 22px;
-    color: #732aaf;
-    font-weight: lighter;
-    border: 2px groove #000;
-    margin-left: 20px;
-    margin-top: 20px;
+  .contenedor-perfumes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
-  */
+  
+  .perfumes-grilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    background: transparent;
+    border: 2px solid;
+    box-shadow: 0 0 30px #000;
+    overflow: hidden;
+  }
+
+  .perfumes-clases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfume-hombre-mujer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: solid;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .categoria-perfumes {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 270px;
+  }
+
+  .grid-container > div {
+    /*Box-modeling*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid;
+    box-shadow: 0 0 30px;
+    overflow: hidden;
+    font-family: "fuente-principal";
+  }
+  
+  .grid-container {
+    /*Box-modeling*/
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /*Activamos GRID*/
+    display: grid;
+    /*definimos la cantidad de filas y el alto de las mismas*/
+    grid-template-columns: 180px 180px 180px 180px;
+    /*definimos la cantidad de columnas y el anchode las mismas*/
+  }
+
+  .marcas-contpadre1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-left: 250px;
+  }
 }
 
 
