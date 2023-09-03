@@ -106,6 +106,7 @@ $lista1; red, green, yellow, blue;
 
 */
 /*Selector Reset o Universal*/
+
 * {
   margin: 0;
   padding: 0;
@@ -305,13 +306,13 @@ $lista1; red, green, yellow, blue;
   flex: 1 0 auto;
   margin: 0 50px;
   background-color: #000;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .azzaro-carrusel, .chrome-carrusel, .calvin-carrusel, .carolina-carrusel, .dior-carrusel, .pacorabanne-carrusel, .tom-carrusel, .dolce-carrusel, .yves-carrusel, .invictus-carrusel {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .new-arriwals {
@@ -350,10 +351,39 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.Whatsapp, .Facebook, .Instagram {
-  width: 20px;
+.nuestrasredes {
+  font-size: 22px;
+  padding-left: 5%;
+}
+
+.whatsapp, .facebook, .instagram, .youtube {
+  width: 35px;
+  padding-left: 10px;
+}
+
+.new-piepagina {
+  margin: 5px 5px 0px 35%;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.boton-enviar-home {
+  width: 70px;
+  height: 28px;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "fuente-principal";
+  background-color: #000;
+  color: #fff;
+}
+
+.input-correo {
+  width: 300px;
+  height: 35px;
 }
 
 .perfumes-clases {
@@ -411,7 +441,8 @@ footer {
   flex-wrap: wrap;
   justify-content: end;
   align-items: end;
-  width: 100%;
+  width: 70%;
+  margin-left: 28%;
 }
 
 .perfumes-grilla {
@@ -428,7 +459,7 @@ footer {
   overflow: hidden;
 }
 
-.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .dol-gab-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
+.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .azzaro-most-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
   width: 150px;
 }
 
@@ -609,7 +640,7 @@ a {
 
 
 
-@media screen and (min-width: 1201px) {
+/*@media screen and (min-width: 1201px) {
   
   .flexi-container {
     display: flex;
@@ -671,10 +702,10 @@ a {
     grid-template-columns: 400px 400px 400px 400px;
   }
 }
+*/
 
 
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/*@media screen and (min-width: 768px) and (max-width: 1200px) {
   
   .flexi-container {
     display: flex;
@@ -736,10 +767,10 @@ a {
     grid-template-columns: 400px 400px 400px 400px;
   }
 }
+*/
 
 
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/*@media screen and (min-width: 768px) and (max-width: 1200px) {
   
   .flexi-container {
     display: flex;
@@ -852,9 +883,10 @@ a {
     padding-bottom: 50px;
     padding-left: 270px;
   }
+*/
 
-  .grid-container > div {
-    /*Box-modeling*/
+
+ /* .grid-container > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -869,31 +901,9 @@ a {
     overflow: hidden;
     font-family: "fuente-principal";
   }
+
+  */
   
-  .grid-container {
-    /*Box-modeling*/
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    /*Activamos GRID*/
-    display: grid;
-    /*definimos la cantidad de filas y el alto de las mismas*/
-    grid-template-columns: 190px 190px 190px 190px;
-    /*definimos la cantidad de columnas y el anchode las mismas*/
-  }
-
-  .marcas-contpadre1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: wrap;
-    padding-left: 250px;
-  }
-}
-
-
-
 @media screen and (max-width: 767px) {
   
   .flexi-container {
@@ -918,9 +928,10 @@ a {
 
   .boton-dias {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 35px;
+    align-items: center;
+    gap: 5px;
   }
 
   .new-arriwals {
@@ -940,7 +951,7 @@ a {
     margin: 50px;
   }
 
-  .versace-dos, .calvin-klein, .dior-seiscuotas {
+  .versace-dos, .calvin-klein, .dior-seiscuotas, .azzaro-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -948,15 +959,10 @@ a {
   }
 
   .grid-container2 {
-    width: 100%;
-    max-width: 1900px;
-    padding-top: 50px;
-    background-color: #000;
-    color: #fff;
-    font-family: "fuente principal";
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: 190px 190px 190px 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
 
   .contenedor-perfumes {
