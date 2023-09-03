@@ -18,6 +18,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <!--CSS-->
    <link rel="stylesheet" href="./css/estilos.css">
+   <!--Animaciones CSS-->
+   <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 
 <body>
@@ -74,12 +76,15 @@
     <header>
 
       <section class="fondo-creed">
+        <button><img class="arrow-left-icon" src="./assets (imagenes)/icons/Arrow left.png" alt="arrow-left"></button>
        
           <div>
             <img src="./Assets (Imagenes)/Creed Perfumes.jpg" class="creed-perfumes" alt="creed-perfumes">
             <img src="./assets (imagenes)/creed-botellas-de-perfume.jpg" class="creed-botellas" alt="creed-varios">
             <img src="./assets (imagenes)/creed-varios.jpg" class="creed-varios" alt="creed-varios">
           </div>
+        
+        <button><img class="arrow-right-icon" src="./assets (imagenes)/icons/Arrow right.png" alt="arrow-left"></button>
       
       </section>
         
@@ -88,8 +93,41 @@
           
             <h4 class="creed-cuotas">12 CUOTAS SIN INTERES</h4>
 
-              <div class="boton-comprar-padre">
+              <div class="boton-comprar-padre animate__animated animate__flash">
                 <a href="./paginas/perfumes.html"><button class="boton-comprar">COMPRAR</button></a>
+              </div>
+
+              <div class="carrusel-perfumes">
+                <div class="elemento">
+                  <img class="azzaro-carrusel" src="./assets (imagenes)/Azzaro Wanted.jpg" alt="azzaro-tres">
+                </div>
+                <div class="elemento">
+                  <img class="chrome-carrusel" src="./assets (imagenes)/Azzaro Chrome EDP.webp" alt="azzaro-chrome">
+                </div>
+                <div class="elemento">
+                  <img class="calvin-carrusel" src="./assets (imagenes)/Calvin Klein botella.webp" alt="calvin-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="carolina-carrusel" src="./assets (imagenes)/Carolina Herrera.webp" alt="caro-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="dior-carrusel" src="./assets (imagenes)/Fragancia-Dior-Homme-Sport-EDT-125ml_01.webp" alt="dior-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="pacorabanne-carrusel" src="./assets (imagenes)/perfume-paco-rabanne-pour-homme-edt-100ml.webp" alt="paco-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="tom-carrusel" src="./assets (imagenes)/Tom Ford.webp" alt="tom-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="dolce-carrusel" src="./assets (imagenes)/Dolce gabanna light blue.webp" alt="dolce-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="yves-carrusel" src="./assets (imagenes)/Yves saint Laurent new arrival.webp" alt="yves-carrusel">
+                </div>
+                <div class="elemento">
+                  <img class="invictus-carrusel" src="./assets (imagenes)/paco-rabanne-invictus-eau-de-toilette.webp" alt="invictus-carrusel">
+                </div>
               </div>
        
             <h3 class="ben-prom">BENEFICIOS Y PROMOCIONES</h3>
@@ -124,7 +162,7 @@
         </section>
 
           
-          <div class="flexi-container">
+          <div class="flexi-container-home">
             
               <div class="caj-c1">
                   <img src="./assets (imagenes)/Bbva frances.webp" class="bbvafrances" alt="bbva-frances">
@@ -153,21 +191,30 @@
 
           </div>
               
-              <div class="vermas-boton-padre">
-                  <a href="./paginas/promociones.html"><button class="vermaspro">VER MAS PROMOCIONES</button></a>
+              <div class="vermas-boton-padre animate__animated animate__rotateInDownLeft">
+                  <a href="./paginas/promociones.html"><button class="vermaspro-home">VER MAS PROMOCIONES</button></a>
               </div>
 
             <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">NEW ARRIWALS</h3>
 
-      <div class="new-arriwals">
-        <img src="Assets (Imagenes)/Invictus New.webp" class="invictus"  alt="Invictus">
-        <img src="Assets (Imagenes)/Tom Ford.webp" class="tom-ford"  alt="Tom-Ford">
-        <img src="Assets (Imagenes)/Dolce & Gabbana.webp" class="dolce-gabbana"  alt="Dolce-&-Gabbana">
-        <img src="./Assets (Imagenes)/Perfumes Givenchy Mujer.webp" class="given-mujer" alt="givenchy-mujer">
-        <img src="./Assets (Imagenes)/Givenchy Perfum Intense.webp" class="given-intense" alt="givenchy-intense">
-      </div> 
+    <div>
+          <img src="./assets (imagenes)/Invictus New.webp" class="invictus" alt="invictus">
+          <img src="Assets (Imagenes)/Tom Ford.webp" class="tom-ford"  alt="Tom-Ford">
+          <img src="Assets (Imagenes)/Dolce & Gabbana.webp" class="dolce-gabbana"  alt="Dolce-&-Gabbana">
+          <img src="./Assets (Imagenes)/Perfumes Givenchy Mujer.webp" class="given-mujer" alt="givenchy-mujer">
+          <img src="./Assets (Imagenes)/Givenchy Perfum Intense.webp" class="given-intense" alt="givenchy-intense">
+    </div>
+
+    <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">AZZARO | 6 O 12 CUOTAS SIN INTERES </h3>
+       
+      <div class="azzaro-home">
+        <img class="azzaro-chrome" src="./assets (imagenes)/Azzaro Chrome EAU.jpg" alt="azzaro-chrome">
+        <img class="azzaro-themost" src="./assets (imagenes)/Azzaro the mostt wanted.jpg" alt="azzaro-the-most-wanted">
+        <img class="azzaro-tres" src="./assets (imagenes)/Azzaro Tres perfumes.jpg" alt="azzaro-tres">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/02_sciFL_XY?si=s-s_tl0SuPCVFFFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     
-    <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">VERSACE | 12 CUOTAS SIN INTERES </h3>
+    <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">VERSACE | 6 O 12 CUOTAS SIN INTERES </h3>
 
       <div class="versace-dos">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Cs-7dLsjG9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -176,7 +223,7 @@
         <img class="blue" src="./Assets (Imagenes)/Versace Pour blue.webp" alt="pour-blue">
       </div>
 
-      <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">CALVIN KLEIN | 6 CUOTAS SIN INTERES </h3>
+      <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">CALVIN KLEIN | 6 O 12 CUOTAS SIN INTERES </h3>
        
         <div class="calvin-klein">
           <img class="ckblanco" src="./Assets (Imagenes)/Calvin klein blanco.jpg" alt="calvin-blanco">
@@ -185,7 +232,7 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/bdgZ3pauMJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">DIOR | 6 CUOTAS SIN INTERES </h3>
+        <h3 class="display-5 p-2 d-flex justify-content-center aling-items-center">DIOR | 6 O 12 CUOTAS SIN INTERES </h3>
        
         <div class="dior-seiscuotas">
           <img class="dior-addict" src="./Assets (Imagenes)/Dior Addict.webp" alt="dior-addict">

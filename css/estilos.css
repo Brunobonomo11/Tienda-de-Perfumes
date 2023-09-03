@@ -126,6 +126,14 @@ $lista1; red, green, yellow, blue;
   background-color: #000;
 }
 
+.arrow-left-icon {
+  width: 30px;
+}
+
+.arrow-right-icon {
+  width: 30px;
+}
+
 .creed-perfumes, .creed-botellas, .creed-varios {
   width: 30%;
   margin-left: 30px;
@@ -139,7 +147,7 @@ $lista1; red, green, yellow, blue;
   color: #fff;
 }
 
-.boton-comprar, .boton-enviar {
+.boton-enviar {
   width: 100px;
   font-size: 15px;
   font-weight: 600;
@@ -164,6 +172,22 @@ $lista1; red, green, yellow, blue;
     width: 100%;
   }
 }
+
+.boton-comprar {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 150px;
+  font-family: "fuente-principal";
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .ben-prom, .titulo-sucursales {
   display: flex;
   flex-direction: row;
@@ -179,9 +203,11 @@ $lista1; red, green, yellow, blue;
   flex-direction: row;
   justify-content: center;
   margin-top: 35px;
+
 }
 
 .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
+  margin: 10px;
   margin-left: 20px;
   border-radius: 100px;
   width: 100px;
@@ -189,6 +215,7 @@ $lista1; red, green, yellow, blue;
   font-size: 15px;
   background-color: #000;
   color: #fff;
+  padding: 5px;
 }
 
 .flexi-container {
@@ -197,6 +224,16 @@ $lista1; red, green, yellow, blue;
   justify-content: center;
   align-items: center;
   border: 10px solid #000;
+  padding: 15px 0px 20px 0px;
+  margin: 50px;
+  height: 400px;
+}
+
+.flexi-container-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: 15px 0px 20px 0px;
   margin: 50px;
   height: 400px;
@@ -214,31 +251,15 @@ $lista1; red, green, yellow, blue;
   width: 200px;
 }
 
-.vermas-boton-padre, .boton-comprar-padre {
+.boton-comprar-padre {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
   padding-bottom: 25px;
-  animation-name: boton-vermas-anime;
-  animation-iteration-count: 3;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-  animation-delay: 4s;
 }
 
-@keyframes boton-vermas-anime {
-  0% {
-    width: 25%;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.vermaspro, .boton-borrar {
+.boton-borrar {
   width: 200px;
   font-size: 15px;
   font-weight: 600;
@@ -252,6 +273,47 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
+.vermas-boton-padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.vermaspro-home {
+  width: 270px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "fuente-principal";
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel-perfumes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.elemento {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: #000;
+  width: 400px;
+  height: 400px;
+}
+
+.azzaro-carrusel, .chrome-carrusel, .calvin-carrusel, .carolina-carrusel, .dior-carrusel, .pacorabanne-carrusel, .tom-carrusel, .dolce-carrusel, .yves-carrusel, .invictus-carrusel {
+  width: 400px;
+  height: 400px;
+}
+
 .new-arriwals {
   display: flex;
   flex-direction: row;
@@ -263,14 +325,14 @@ $lista1; red, green, yellow, blue;
   width: 300px;
 }
 
-.versace-dos, .calvin-klein, .dior-seiscuotas {
+.versace-dos, .calvin-klein, .dior-seiscuotas, .azzaro-home {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport {
+.pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport, .azzaro-chrome, .azzaro-themost, .azzaro-tres {
   width: 300px;
   margin-left: 15px;
 }
@@ -357,7 +419,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
   margin: 10px;
   padding: 20px;
   position: relative;
@@ -534,17 +595,17 @@ a {
 }
 
 /*Pseudoclases*/
-a:hover {
-  font-size: 20px;
-  background-color: #6610f2;
-  border-bottom: 3px solid;
-}
 
-a:active {
-  background-color: #6610f2;
-  color: #fff;
-  padding: 10px;
+/*a:hover {
+  background-color: #977f7f69;
 }
+*/
+
+/*a:active {
+  background-color: #977f7f69;
+  color: #fff;
+}
+*/
 
 
 
@@ -864,7 +925,7 @@ a:active {
 
   .new-arriwals {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
