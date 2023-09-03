@@ -333,6 +333,40 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
+.azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
+  width: 350px;
+}
+
+.container-azzaro, .container-carolina, .container-versace, .container-azzaro-puor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 50px 0px 50px 20px;
+}
+
+.azzaro-publi, .carolina-publi, .versace-publi, .azzaro-puor-publi {
+  /*Posición de los botones*/
+  color: #000;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  /*Personalización de los botones*/
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 150px;
+  font-family: "fuente-principal";
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport, .azzaro-chrome, .azzaro-themost, .azzaro-tres {
   width: 300px;
   margin-left: 15px;
