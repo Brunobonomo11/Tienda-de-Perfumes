@@ -367,6 +367,66 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
+.Azzaro-Fondo {
+  background-image: url('Azzaro Fondo Web.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 35px;
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 50px 0px 50px 150px;
+}
+
+.cuotas-azzaro-pie {
+  color: #000;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  /*Personalización de los botones*/
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 150px;
+  font-family: "fuente-principal";
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.azzaro-imagen-texto {
+  color: #000;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+}
+
+.comprar-cuotas-azzaro {
+  color: #000;
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+}
+
+.muestra-azzaro {
+  color: #fff;
+  position: absolute;
+  top: 77%;
+  left: 35%;
+  transform: translate(-50%,-50%);
+}
+
 .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport, .azzaro-chrome, .azzaro-themost, .azzaro-tres {
   width: 300px;
   margin-left: 15px;
