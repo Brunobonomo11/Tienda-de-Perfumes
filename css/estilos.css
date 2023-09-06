@@ -675,6 +675,10 @@ footer {
   color: #0dcaf0;
 }
 
+.contenedor-titulo-perfumes {
+  transform: translateY(-8%)
+}
+
 .contenedor-perfumes {
   display: flex;
   flex-wrap: wrap;
@@ -776,7 +780,7 @@ footer {
   font-size: 50px;
 }
 
-.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g {
+.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g, .marcas-h, .marcas-i, .marcas-j, .marcas-k, .marcas-l, .marcas-m {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -785,14 +789,14 @@ footer {
   margin: 20px;
 }
 
-.h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g {
+.h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g, .h4h, .h4i, .h4j, .h4k, .h4l, .h4m {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 0px 0px 50px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
   padding: 25px 0px 0px 50px;
 }
 
@@ -805,11 +809,14 @@ footer {
 }
 
 .contenedor {
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  transform: translateY(-35%);
 }
 
 .mapa {
@@ -821,16 +828,22 @@ footer {
   border: 2px solid;
   box-shadow: 0 0 30px #000;
   overflow: hidden;
-  margin-top: 100px;
 }
 
 .iframesucur {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   padding-top: 25px;
   justify-content: center;
   align-items: center;
+}
+
+.titulo-sucursal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 h2 {
@@ -866,13 +879,10 @@ h2 {
 
 .p-contacto {
   display: flex;
-  padding: 20px;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  color: #fff;
+  padding: 20px;
+  color: #000;
 }
-
 
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
