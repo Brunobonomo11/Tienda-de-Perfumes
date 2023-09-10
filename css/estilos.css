@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins&family=Roboto:wght@300&display=swap");
 /*
 @import "colores"
 @import "navegacion"
@@ -6,6 +7,18 @@
 @import "footer"
 */
 /*Variables globales*/
+@font-face {
+  font-family: "Playfair-fuente";
+  src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@300&display=swap");
+}
+@font-face {
+  font-family: "Merryweather";
+  src: url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Playfair+Display:ital@1&family=Roboto:wght@300&display=swap");
+}
+@font-face {
+  font-family: "fuente-principal3";
+  src: url("../fuentes/Merriweather-Regular.ttf");
+}
 /*
 $relleno: 20px;
 $fuente-principal: arial, helvetica, sans-serif;
@@ -818,10 +831,60 @@ footer {
   font-weight: 400;
 }
 
-.chanel-marcas {
+.clinique-marcas {
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
+}
+
+.kera-marcas {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.dior-marcas {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.given-marcas-grilla {
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.yvessaint-marcas, .carolina-marcas {
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.calvin-marcas, .mugler-marcas {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.bvlgari-marcas {
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.estee-marcas, .loewe-marcas {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hermes-marcas {
+  font-size: 25px;
+  font-family: "Playfair-fuente";
+}
+
+.paco-marcas {
+  font-size: 25px;
+  font-family: "Merryweather";
+}
+
+.lancome-marcas, .guerlain-marcas, .mac-marcas, .tom-marcas {
+  font-size: 25px;
+  font-family: "fuente-principal3";
 }
 
 .marcas-a-z {
@@ -857,7 +920,7 @@ footer {
   font-size: 45px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas, .narciso-rodriguez, .ninaricci, .opi, .paco-marcas, .paloma-herrera, .paula-marcas, .payot, .pepe, .petit-enfant, .pino-silvestre, .police, .prune, .ralph, .reebok, .replay, .rimmel, .rochas, .sally, .sebastian, .shakira, .shiseido, .solinotes, .chemist, .tiffany, .ford-marcas, .versace-marcas, .viktor, .women, .yves-marcas {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .guerlain-marcas, .mac-marcas, .tom-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas, .narciso-rodriguez, .ninaricci, .opi, .paco-marcas, .paloma-herrera, .paula-marcas, .payot, .pepe, .petit-enfant, .pino-silvestre, .police, .prune, .ralph, .reebok, .replay, .rimmel, .rochas, .sally, .sebastian, .shakira, .shiseido, .solinotes, .chemist, .tiffany, .ford-marcas, .versace-marcas, .viktor, .women, .yves-marcas {
   padding: 25px 0px 0px 50px;
 }
 
@@ -1614,7 +1677,7 @@ a {
     justify-content: space-around;
     padding: 25px 0px 0px 50px;
   }
-  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .mac-marcas, .tom-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
     padding: 25px 0px 0px 50px;
   }
   .marcas-contpadre1 {
@@ -2370,7 +2433,7 @@ a {
     justify-content: space-around;
     padding: 25px 0px 0px 50px;
   }
-  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .mac-marcas, .tom-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
     padding: 25px 0px 0px 50px;
   }
   .marcas-contpadre1 {
