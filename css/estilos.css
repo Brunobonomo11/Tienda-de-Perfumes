@@ -305,7 +305,7 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
-.contenedor-yvessaint {
+.contenedor-yvessaint, .contenedor-jeanpaul {
   display: flex;
   justify-content: start;
   margin-left: 10%;
@@ -317,12 +317,18 @@ $lista1; red, green, yellow, blue;
   margin-bottom: 30px;
 }
 
-.img-yvessaint {
+.iframe-jeanpaul {
+  width: 650px;
+  height: 450px;
+  margin-bottom: 30px;
+}
+
+.img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
   width: 250px;
   margin-left: 45px;
 }
 
-.yvessaint-contenedor {
+.yvessaint-contenedor, .jeanpaul-contenedor, .jeanpaul-contenedor2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -332,13 +338,13 @@ $lista1; red, green, yellow, blue;
   box-shadow: 0 0 30px #000;
 }
 
-.titulo-yvessaint {
+.titulo-yvessaint, .titulo-jeanpaul, .titulo-jeanpaul2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.cuotas-yvessaint {
+.cuotas-yvessaint, .cuotas-jeanpaul, .cuotas-jeanpaul2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1105,7 +1111,7 @@ a {
     align-items: center;
     margin-left: 20px;
   }
-  .contenedor-yvessaint {
+  .contenedor-yvessaint, .contenedor-jeanpaul {
     display: flex;
     justify-content: start;
   }
@@ -1114,11 +1120,11 @@ a {
     height: 300px;
     margin-bottom: 10px;
   }
-  .img-yvessaint {
+  .img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
     width: 250px;
     margin-left: auto;
   }
-  .yvessaint-contenedor {
+  .yvessaint-contenedor, .jeanpaul-contenedor, .jeanpaul-contenedor2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1127,12 +1133,12 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  .titulo-yvessaint {
+  .titulo-yvessaint, .titulo-jeanpaul, .titulo-jeanpaul2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .cuotas-yvessaint {
+  .cuotas-yvessaint, .cuotas-jeanpaul, .cuotas-jeanpaul2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1851,7 +1857,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .contenedor-yvessaint {
+  .contenedor-yvessaint, .contenedor-jeanpaul {
     display: flex;
     justify-content: start;
   }
@@ -1860,11 +1866,11 @@ a {
     height: 300px;
     margin-bottom: 10px;
   }
-  .img-yvessaint {
+  .img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
     width: 100px;
     margin-left: auto;
   }
-  .yvessaint-contenedor {
+  .yvessaint-contenedor, .jeanpaul-contenedor, .jeanpaul-contenedor2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1873,12 +1879,12 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  .titulo-yvessaint {
+  .titulo-yvessaint, .titulo-jeanpaul, .titulo-jeanpaul2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .cuotas-yvessaint {
+  .cuotas-yvessaint, .cuotas-jeanpaul, .cuotas-jeanpaul2 {
     display: flex;
     flex-direction: column;
     justify-content: center;

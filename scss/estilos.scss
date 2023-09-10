@@ -12,6 +12,7 @@ $cyan-500: #0dcaf0;
 $red-700: #dc3545;
 $teal-600: #20c997;
 $relleno: 15px;
+$tamanio: 200px;
 $fuente-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 /*
@@ -228,12 +229,12 @@ $lista1; red, green, yellow, blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: $tamanio;
+  height: $tamanio;
 }
 
 .bbvafrances, .icbc, .modo, .santander, .american {
-  width: 200px;
+  width: $tamanio;
 }
 
 .boton-comprar-padre {
@@ -245,7 +246,7 @@ $lista1; red, green, yellow, blue;
 }
 
 .boton-borrar {
-  width: 200px;
+  width: $tamanio;
   font-size: 15px;
   font-weight: 600;
   font-family: "fuente-principal";
@@ -324,8 +325,18 @@ $lista1; red, green, yellow, blue;
   margin-left: 10%;
 }
 
+.contenedor-jeanpaul {
+  @extend .contenedor-yvessaint
+}
+
 .iframe-yvessaint {
   width: 850px;
+  height: 450px;
+  margin-bottom: 30px;
+}
+
+.iframe-jeanpaul {
+  width: 650px;
   height: 450px;
   margin-bottom: 30px;
 }
@@ -333,6 +344,10 @@ $lista1; red, green, yellow, blue;
 .img-yvessaint {
   width: 250px;
   margin-left: 45px;
+}
+
+.img-jeanpaul, .img-jeanpaul2 {
+  @extend .img-yvessaint
 }
 
 .yvessaint-contenedor {
@@ -345,16 +360,28 @@ $lista1; red, green, yellow, blue;
   box-shadow: 0 0 30px #000;
 }
 
+.jeanpaul-contenedor, .jeanpaul-contenedor2 {
+  @extend .yvessaint-contenedor
+}
+
 .titulo-yvessaint {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+.titulo-jeanpaul, .titulo-jeanpaul2 {
+  @extend .titulo-yvessaint
+}
+
 .cuotas-yvessaint {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.cuotas-jeanpaul, .cuotas-jeanpaul2 {
+  @extend .cuotas-yvessaint
 }
 
 .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
