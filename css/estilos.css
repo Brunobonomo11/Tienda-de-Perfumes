@@ -790,9 +790,6 @@ footer {
   font-size: 20px;
   text-align: center;
   position: relative;
-  background: transparent;
-  border: 2px solid;
-  box-shadow: 0 0 30px;
   overflow: hidden;
   font-family: "fuente-principal";
 }
@@ -809,39 +806,67 @@ footer {
   /*definimos la cantidad de columnas y el anchode las mismas*/
 }
 
+.chanel-marcas {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+}
+
+.giorgio-marcas {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.chanel-marcas {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+
+.marcas-a-z {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(250%);
+}
+
 .letras {
   padding-top: 100px;
   display: flex;
   justify-content: center;
   font-size: 50px;
+  letter-spacing: 3px;
 }
 
-.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g, .marcas-h, .marcas-i, .marcas-j, .marcas-k, .marcas-l, .marcas-m {
+.marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g, .marcas-h, .marcas-i, .marcas-j, .marcas-k, .marcas-l, .marcas-m, .marcas-n, .marcas-o, .marcas-p, .marcas-r, .marcas-s, .marcas-t, .marcas-v, .marcas-w, .marcas-y {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: start;
   text-align: start;
-  padding: 20px 0px 20px 0px;
-  margin: 20px;
+  padding: 5px 0px 5px 0px;
+  margin: 5px;
 }
 
-.h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g, .h4h, .h4i, .h4j, .h4k, .h4l, .h4m {
+.h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g, .h4h, .h4i, .h4j, .h4k, .h4l, .h4m, .h4n, .h4o, .h4p, .h4r, .h4s, .h4t, .h4v, .h4w, .h4y {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 25px 0px 0px 50px;
+  font-size: 45px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas, .narciso-rodriguez, .ninaricci, .opi, .paco-marcas, .paloma-herrera, .paula-marcas, .payot, .pepe, .petit-enfant, .pino-silvestre, .police, .prune, .ralph, .reebok, .replay, .rimmel, .rochas, .sally, .sebastian, .shakira, .shiseido, .solinotes, .chemist, .tiffany, .ford-marcas, .versace-marcas, .viktor, .women, .yves-marcas {
   padding: 25px 0px 0px 50px;
 }
 
 .marcas-contpadre1 {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 7%;
 }
 
 .contenedor {
@@ -1110,30 +1135,19 @@ a {
     align-items: center;
     margin-left: 20px;
   }
-
   .contenedor-yvessaint, .contenedor-jeanpaul {
     display: flex;
     justify-content: start;
-    margin-left: 10%;
   }
-  
   .iframe-yvessaint {
-    width: 850px;
-    height: 450px;
-    margin-bottom: 30px;
+    width: 450px;
+    height: 300px;
+    margin-bottom: 10px;
   }
-  
-  .iframe-jeanpaul {
-    width: 650px;
-    height: 450px;
-    margin-bottom: 30px;
-  }
-  
   .img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
     width: 250px;
-    margin-left: 45px;
+    margin-left: auto;
   }
-  
   .yvessaint-contenedor, .jeanpaul-contenedor, .jeanpaul-contenedor2 {
     display: flex;
     flex-direction: column;
@@ -1143,17 +1157,17 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  
   .titulo-yvessaint, .titulo-jeanpaul, .titulo-jeanpaul2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
-  
   .cuotas-yvessaint, .cuotas-jeanpaul, .cuotas-jeanpaul2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-left: 15px;
   }
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
     width: 350px;
@@ -1690,17 +1704,6 @@ a {
     color: #000;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 767px) {
   .container-fluid {
     font-size: 20px;
@@ -1881,26 +1884,16 @@ a {
   .contenedor-yvessaint, .contenedor-jeanpaul {
     display: flex;
     justify-content: start;
-    margin-left: 10%;
   }
-  
   .iframe-yvessaint {
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-  }
-  
-  .iframe-jeanpaul {
-    width: 200px;
-    height: 150px;
-    margin-bottom: 30px;
-  }
-  
-  .img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
     width: 150px;
-    margin-left: 45px;
+    height: 300px;
+    margin-bottom: 10px;
   }
-  
+  .img-yvessaint, .img-jeanpaul, .img-jeanpaul2 {
+    width: 100px;
+    margin-left: auto;
+  }
   .yvessaint-contenedor, .jeanpaul-contenedor, .jeanpaul-contenedor2 {
     display: flex;
     flex-direction: column;
@@ -1910,19 +1903,16 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  
   .titulo-yvessaint, .titulo-jeanpaul, .titulo-jeanpaul2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
-  
   .cuotas-yvessaint, .cuotas-jeanpaul, .cuotas-jeanpaul2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
-
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
     width: 250px;
   }
