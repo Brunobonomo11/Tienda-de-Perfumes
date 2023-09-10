@@ -310,6 +310,45 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 
+.contenedor-yvessaint {
+  display: flex;
+  justify-content: start;
+  margin-left: 10%;
+}
+
+.iframe-yvessaint {
+  width: 850px;
+  height: 450px;
+  margin-bottom: 30px;
+}
+
+.img-yvessaint {
+  width: 250px;
+  margin-left: 45px;
+}
+
+.yvessaint-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45px;
+  border: 2px solid;
+  box-shadow: 0 0 30px #000;
+}
+
+.titulo-yvessaint {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cuotas-yvessaint {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
   width: 350px;
 }
@@ -851,11 +890,11 @@ h2 {
   justify-content: end;
   align-items: end;
   margin-right: 37%;
-  color: #fff;
+  color: #000;
 }
 
 .ayuda-contacto {
-  color: #fff;
+  color: #000;
 }
 
 .div-input {
@@ -865,16 +904,15 @@ h2 {
   justify-content: end;
   align-items: end;
   margin-right: 35%;
-  color: #fff;
+  color: #000;
 }
 
 .contacto-h {
   padding-top: 50px;
 }
 
-.fondo-contacto {
-  background-image: url(https://www.xtrafondos.com/descargar.php?id=7078&resolucion=3840x2160);
-  background-size: cover;
+.contenedor-contacto {
+  transform: translateY(-75%);
 }
 
 .p-contacto {
@@ -1103,6 +1141,46 @@ a {
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+  }
+
+  .contenedor-yvessaint {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .iframe-yvessaint {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .img-yvessaint {
+    width: 250px;
+    margin-left: auto;
+  }
+  
+  .yvessaint-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    border: 2px solid;
+    box-shadow: 0 0 30px #000;
+  }
+  
+  .titulo-yvessaint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cuotas-yvessaint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
   }
   
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
@@ -1723,6 +1801,9 @@ a {
 
 
 
+
+
+
 @media screen and (max-width: 767px) {  
   
   .container-fluid {
@@ -1922,6 +2003,44 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .contenedor-yvessaint {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .iframe-yvessaint {
+    width: 150px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .img-yvessaint {
+    width: 100px;
+    margin-left: auto;
+  }
+  
+  .yvessaint-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    border: 2px solid;
+    box-shadow: 0 0 30px #000;
+  }
+  
+  .titulo-yvessaint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cuotas-yvessaint {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
