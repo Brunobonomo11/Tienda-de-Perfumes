@@ -706,12 +706,11 @@ footer {
   align-items: center;
 }
 
-.givenchy, .givenchym, .carolinah {
+.givenchy, .givenchym, .calvin-categoria {
   width: 100px;
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 1px solid;
 }
 
 .grid-container2 {
@@ -747,10 +746,11 @@ footer {
   align-items: center;
   padding-top: 50px;
   color: $teal-600;
+  transform: translate(82%,50%)
 }
 
 .contenedor-titulo-perfumes {
-  transform: translateY(-8%)
+  transform: translateY(-6%)
 }
 
 .contenedor-perfumes {
@@ -758,8 +758,7 @@ footer {
   flex-wrap: wrap;
   justify-content: end;
   align-items: end;
-  width: 70%;
-  margin-left: 20%;
+  width: 100%;
 }
 
 .titulo-perfumes {
@@ -794,7 +793,7 @@ footer {
   overflow: hidden;
 }
 
-.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .azzaro-most-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
+.dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .azzaro-most-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14, .dol-gab-grilla15, .dol-gab-grilla16, .dol-gab-grilla17, .dol-gab-grilla18, .dol-gab-grilla19 {
   width: 150px;
 }
 
