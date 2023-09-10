@@ -106,7 +106,6 @@ $lista1; red, green, yellow, blue;
 
 */
 /*Selector Reset o Universal*/
-
 * {
   margin: 0;
   padding: 0;
@@ -118,7 +117,6 @@ $lista1; red, green, yellow, blue;
   font-family: "fuente-principal";
   src: url(../Fuentes/Roboto-Medium.ttf);
 }
-
 .container-fluid {
   font-size: 20px;
 }
@@ -129,7 +127,7 @@ $lista1; red, green, yellow, blue;
   font-weight: 600;
   font-family: "fuente-principal";
   border-radius: 100px;
-  background-color: #6610f2;
+  background-color: #dc3545;
   color: #000;
   display: flex;
   flex-direction: row;
@@ -148,7 +146,6 @@ $lista1; red, green, yellow, blue;
     width: 100%;
   }
 }
-
 /*.boton-comprar {
   width: 100px;
   height: 30px;
@@ -164,7 +161,6 @@ $lista1; red, green, yellow, blue;
   align-items: center;
 }
 */
-
 .ben-prom, .titulo-sucursales {
   display: flex;
   flex-direction: row;
@@ -172,7 +168,7 @@ $lista1; red, green, yellow, blue;
   align-items: center;
   padding: 20px 0px 20px 0px;
   margin-top: 50px;
-  background-color: #6610f2;
+  background-color: #dc3545;
 }
 
 .boton-dias {
@@ -180,7 +176,6 @@ $lista1; red, green, yellow, blue;
   flex-direction: row;
   justify-content: center;
   margin-top: 35px;
-
 }
 
 .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
@@ -242,7 +237,7 @@ $lista1; red, green, yellow, blue;
   font-weight: 600;
   font-family: "fuente-principal";
   border-radius: 100px;
-  background-color: #6610f2;
+  background-color: #dc3545;
   color: #000;
   display: flex;
   flex-direction: row;
@@ -366,8 +361,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
   /*Personalización de los botones*/
   width: 100px;
   height: 30px;
@@ -384,7 +378,7 @@ $lista1; red, green, yellow, blue;
 }
 
 .Creed-fondo {
-  background-image: url('Creed Fondo tres 1600 cortado.jpg');
+  background-image: url("Creed Fondo tres 1600 cortado.jpg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -398,7 +392,7 @@ $lista1; red, green, yellow, blue;
 }
 
 .Azzaro-Fondo {
-  background-image: url('Azzaro Fondo Web.jpg');
+  background-image: url("Azzaro Fondo Web.jpg");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -416,8 +410,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 85%;
   left: 50%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
   /*Personalización de los botones*/
   width: 100px;
   height: 30px;
@@ -438,8 +431,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 75%;
   left: 85%;
-  transform: translate(-50%,-50%);
-
+  transform: translate(-50%, -50%);
   /*Personalización de los botones*/
   width: 100px;
   height: 30px;
@@ -459,7 +451,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 20%;
   left: 20%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .creed-imagen-texto {
@@ -469,7 +461,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 20%;
   left: 10%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .comprar-cuotas-azzaro {
@@ -477,7 +469,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 20%;
   left: 80%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .comprar-cuotas-creed {
@@ -487,7 +479,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 20%;
   left: 85%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .muestra-azzaro {
@@ -495,7 +487,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 77%;
   left: 35%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .muestra-creed {
@@ -505,7 +497,7 @@ $lista1; red, green, yellow, blue;
   position: absolute;
   top: 45%;
   left: 85%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .card-position {
@@ -545,7 +537,7 @@ $lista1; red, green, yellow, blue;
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .card .front {
@@ -567,7 +559,7 @@ $lista1; red, green, yellow, blue;
   height: 45px;
   line-height: 45px;
   color: #fff;
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
@@ -711,11 +703,11 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  color: #0dcaf0;
+  color: #20c997;
 }
 
 .contenedor-titulo-perfumes {
-  transform: translateY(-8%)
+  transform: translateY(-8%);
 }
 
 .contenedor-perfumes {
@@ -835,7 +827,7 @@ footer {
   padding: 25px 0px 0px 50px;
 }
 
-.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+.adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
   padding: 25px 0px 0px 50px;
 }
 
@@ -923,18 +915,15 @@ h2 {
 }
 
 /*Pseudoclases*/
-
 /*a:hover {
   background-color: #977f7f69;
 }
 */
-
 /*a:active {
   background-color: #977f7f69;
   color: #fff;
 }
 */
-
 a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -943,16 +932,10 @@ a {
   color: #000;
 }
 
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
   .container-fluid {
     font-size: 20px;
   }
-  
   .boton-enviar {
     width: 100px;
     font-size: 15px;
@@ -966,7 +949,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   @keyframes boton-comprar-anime {
     0% {
       width: 25%;
@@ -978,7 +960,6 @@ a {
       width: 100%;
     }
   }
-  
   /*.boton-comprar {
     width: 100px;
     height: 30px;
@@ -994,7 +975,6 @@ a {
     align-items: center;
   }
   */
-  
   .ben-prom, .titulo-sucursales {
     display: flex;
     flex-direction: row;
@@ -1004,16 +984,13 @@ a {
     margin-left: 15%;
     background-color: #6610f2;
   }
-  
   .boton-dias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 35px;
-  
   }
-  
   .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
     margin: 10px;
     margin-left: 20px;
@@ -1025,7 +1002,6 @@ a {
     color: #fff;
     padding: 5px;
   }
-  
   .flexi-container {
     display: flex;
     flex-direction: column;
@@ -1036,7 +1012,6 @@ a {
     margin: 50px;
     height: auto;
   }
-  
   .flexi-container-home {
     display: flex;
     flex-direction: row;
@@ -1045,7 +1020,6 @@ a {
     margin: 50px;
     margin-left: 15%;
   }
-  
   .caj-c1, .caj-c2, .caj-c3, .caj-c4, .caj-c5 {
     display: flex;
     flex-direction: column;
@@ -1055,11 +1029,9 @@ a {
     height: 150px;
     margin-left: 25px;
   }
-  
   .bbvafrances, .icbc, .modo, .santander, .american {
     width: 110px;
   }
-  
   .boton-comprar-padre {
     display: flex;
     flex-direction: row;
@@ -1067,7 +1039,6 @@ a {
     text-align: center;
     padding-bottom: 25px;
   }
-  
   .boton-borrar {
     width: 200px;
     font-size: 15px;
@@ -1081,7 +1052,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .vermas-boton-padre {
     display: flex;
     flex-direction: row;
@@ -1089,7 +1059,6 @@ a {
     align-items: center;
     padding-bottom: 30px;
   }
-  
   .vermaspro-home {
     width: 270px;
     height: 30px;
@@ -1103,14 +1072,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .carrusel-perfumes {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     margin-top: 20px;
   }
-  
   .elemento {
     flex: 1 0 auto;
     margin: 0 50px;
@@ -1118,23 +1085,19 @@ a {
     width: 400px;
     height: 400px;
   }
-  
   .azzaro-carrusel, .chrome-carrusel, .calvin-carrusel, .carolina-carrusel, .dior-carrusel, .pacorabanne-carrusel, .tom-carrusel, .dolce-carrusel, .yves-carrusel, .invictus-carrusel {
     width: 400px;
     height: 400px;
   }
-  
   .new-arriwals {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  
   .invictus, .tom-ford, .dolce-gabbana, .given-mujer, .given-intense {
     width: 300px;
   }
-  
   .versace-dos, .calvin-klein, .dior-seiscuotas, .azzaro-home {
     display: flex;
     flex-direction: row;
@@ -1142,23 +1105,19 @@ a {
     align-items: center;
     margin-left: 20px;
   }
-
   .contenedor-yvessaint {
     display: flex;
     justify-content: start;
   }
-  
   .iframe-yvessaint {
     width: 450px;
     height: 300px;
     margin-bottom: 10px;
   }
-  
   .img-yvessaint {
     width: 250px;
     margin-left: auto;
   }
-  
   .yvessaint-contenedor {
     display: flex;
     flex-direction: column;
@@ -1168,13 +1127,11 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  
   .titulo-yvessaint {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
   .cuotas-yvessaint {
     display: flex;
     flex-direction: column;
@@ -1182,26 +1139,22 @@ a {
     align-items: center;
     margin-left: 15px;
   }
-  
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
     width: 350px;
   }
-  
   .container-azzaro, .container-carolina, .container-versace, .container-azzaro-puor {
     position: relative;
     display: inline-block;
     text-align: center;
     margin: 50px 0px 50px 20px;
   }
-  
   .azzaro-publi, .carolina-publi, .versace-publi, .azzaro-puor-publi {
     /*Posición de los botones*/
     color: #000;
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 100px;
     height: 30px;
@@ -1216,9 +1169,8 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .Creed-fondo {
-    background-image: url('Creed Fondo tres 1600 cortado.jpg');
+    background-image: url("Creed Fondo tres 1600 cortado.jpg");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -1230,13 +1182,11 @@ a {
     text-align: center;
     margin: auto;
   }
-
   .creed-fondo-mediaq {
     width: 1024px;
   }
-  
   .Azzaro-Fondo {
-    background-image: url('Azzaro Fondo Web.jpg');
+    background-image: url("Azzaro Fondo Web.jpg");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -1248,18 +1198,15 @@ a {
     text-align: center;
     margin: auto;
   }
-
   .azzaro-fondo-mediaq {
     width: 1000px;
   }
-  
   .cuotas-azzaro-pie {
     color: #000;
     position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 100px;
     height: 30px;
@@ -1274,14 +1221,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .cuotas-creed-home {
     color: #000;
     position: absolute;
     top: 45%;
     left: 82%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 100px;
     height: 30px;
@@ -1295,15 +1240,13 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .azzaro-imagen-texto {
     color: #000;
     position: absolute;
     top: 20%;
     left: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .creed-imagen-texto {
     font-size: 20px;
     font-weight: 600;
@@ -1311,17 +1254,15 @@ a {
     position: absolute;
     top: 20%;
     left: 15%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .comprar-cuotas-azzaro {
     color: #000;
     position: absolute;
     top: 20%;
     left: 80%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .comprar-cuotas-creed {
     color: #000;
     font-size: 15px;
@@ -1329,17 +1270,15 @@ a {
     position: absolute;
     top: 18%;
     left: 85%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .muestra-azzaro {
     color: #fff;
     position: absolute;
     top: 77%;
     left: 35%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .muestra-creed {
     font-size: 15px;
     font-weight: 600;
@@ -1347,9 +1286,8 @@ a {
     position: absolute;
     top: 35%;
     left: 85%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .card-position {
     display: flex;
     flex-wrap: wrap;
@@ -1358,7 +1296,6 @@ a {
     min-height: 100vh;
     margin-left: 40px;
   }
-  
   .boton-tarjeta {
     width: 100px;
     height: 30px;
@@ -1373,13 +1310,11 @@ a {
     align-items: center;
     margin-left: 32%;
   }
-  
   .card {
     position: relative;
     width: 300px;
     height: 350px;
   }
-  
   .card .face {
     position: absolute;
     width: 100%;
@@ -1387,21 +1322,18 @@ a {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
   }
-  
   .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
   }
-  
   .card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
   .card .front h3 {
     position: absolute;
     bottom: 0;
@@ -1409,10 +1341,9 @@ a {
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
   }
-  
   .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
@@ -1424,40 +1355,32 @@ a {
     text-align: center;
     box-shadow: 0 5px 10px #000;
   }
-  
   .card .back .link {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
   }
-  
   .card .back .link a {
     color: #f3f3f3;
   }
-  
   .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
   }
-  
   .card .back p {
     letter-spacing: 1px;
   }
-  
   .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
   }
-  
   .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
   }
-  
   .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport, .azzaro-chrome, .azzaro-themost, .azzaro-tres {
     width: 200px;
     margin-left: 5%;
   }
-  
   iframe {
     width: 25%;
     display: flex;
@@ -1466,7 +1389,6 @@ a {
     align-items: end;
     margin-left: 15px;
   }
-  
   footer {
     display: flex;
     flex-direction: row;
@@ -1474,23 +1396,19 @@ a {
     padding-bottom: 30px;
     padding-top: 30px;
   }
-  
   .nuestrasredes {
     font-size: 22px;
     padding-left: 5%;
   }
-  
   .whatsapp, .facebook, .instagram, .youtube {
     width: 35px;
     padding-left: 10px;
   }
-  
   .new-piepagina {
     margin: 5px 5px 0px 12%;
     margin-top: 5px;
     font-size: 20px;
   }
-  
   .boton-enviar-home {
     width: 70px;
     height: 28px;
@@ -1500,19 +1418,16 @@ a {
     background-color: #000;
     color: #fff;
   }
-  
   .input-correo {
     width: 300px;
     height: 35px;
   }
-  
   .perfumes-clases {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  
   .givenchy, .givenchym, .carolinah {
     width: 100px;
     display: flex;
@@ -1520,7 +1435,6 @@ a {
     text-align: center;
     border: 1px solid;
   }
-  
   .grid-container2 {
     /*Box-modeling*/
     width: 100%;
@@ -1537,7 +1451,6 @@ a {
     grid-template-columns: 180px 180px 180px 180px;
     /*definimos la cantidad de columnas y el anchode las mismas*/
   }
-  
   .perfume-hombre-mujer {
     display: flex;
     flex-direction: column;
@@ -1546,7 +1459,6 @@ a {
     text-decoration: solid;
     padding: auto;
   }
-  
   .perf-hombre, .perf-mujer, .perf-unisex {
     display: flex;
     flex-direction: row;
@@ -1555,7 +1467,6 @@ a {
     padding-top: 50px;
     color: #0dcaf0;
   }
-
   .menu-perfumes-categoria {
     display: flex;
     flex-direction: column;
@@ -1563,7 +1474,6 @@ a {
     align-items: center;
     margin-top: 20px;
   }
-  
   .contenedor-titulo-perfumes {
     display: flex;
     flex-direction: column;
@@ -1571,7 +1481,6 @@ a {
     align-items: center;
     transform: translateY(0.5%);
   }
-  
   .contenedor-perfumes {
     display: flex;
     flex-wrap: wrap;
@@ -1579,7 +1488,6 @@ a {
     align-items: center;
     width: 70%;
   }
-  
   .titulo-perfumes {
     display: flex;
     flex-direction: row;
@@ -1589,7 +1497,6 @@ a {
     margin-right: auto;
     margin-left: 20%;
   }
-  
   .parrafo-perfumes, .parrafo-perfumes2 {
     display: flex;
     flex-direction: column;
@@ -1597,7 +1504,6 @@ a {
     text-align: center;
     margin-top: 15px;
   }
-  
   .perfumes-grilla {
     display: flex;
     flex-direction: column;
@@ -1611,20 +1517,16 @@ a {
     box-shadow: 0 0 30px #000;
     overflow: hidden;
   }
-  
   .dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .azzaro-most-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
     width: 150px;
   }
-  
   .titulo-grilla {
     font-size: 15px;
     font-weight: 700;
   }
-  
   .cuotas-grilla {
     font-weight: 500;
   }
-  
   /*CSS GRID PRACTICA*/
   .encabezado {
     display: flex;
@@ -1635,7 +1537,6 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px 0px 50px 0px;
   }
-  
   .grid-container > div {
     /*Box-modeling*/
     display: flex;
@@ -1652,7 +1553,6 @@ a {
     overflow: hidden;
     font-family: "fuente-principal";
   }
-  
   .grid-container {
     /*Box-modeling*/
     width: 90%;
@@ -1664,14 +1564,12 @@ a {
     grid-template-columns: 220px 220px 220px;
     /*definimos la cantidad de columnas y el anchode las mismas*/
   }
-  
   .letras {
     padding-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 40px;
   }
-  
   .marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g, .marcas-h, .marcas-i, .marcas-j, .marcas-k, .marcas-l, .marcas-m {
     display: flex;
     flex-direction: column;
@@ -1680,18 +1578,15 @@ a {
     padding: 20px 0px 20px 0px;
     margin: 20px;
   }
-  
   .h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g, .h4h, .h4i, .h4j, .h4k, .h4l, .h4m {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 25px 0px 0px 50px;
   }
-  
-  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
     padding: 25px 0px 0px 50px;
   }
-  
   .marcas-contpadre1 {
     display: flex;
     flex-direction: row;
@@ -1699,7 +1594,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-  
   .contenedor {
     width: 85%;
     display: flex;
@@ -1710,7 +1604,6 @@ a {
     margin-left: 15px;
     transform: translateY(0.5%);
   }
-  
   .mapa {
     width: 100%;
     margin: 10px;
@@ -1721,7 +1614,6 @@ a {
     box-shadow: 0 0 30px #000;
     overflow: hidden;
   }
-  
   .iframesucur {
     width: 100%;
     display: flex;
@@ -1730,14 +1622,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .titulo-sucursal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
   }
-  
   h2 {
     display: flex;
     justify-content: center;
@@ -1745,11 +1635,9 @@ a {
     margin-right: auto;
     color: #000;
   }
-  
   .ayuda-contacto {
     color: #000;
   }
-  
   .div-input {
     padding: 10px;
     display: flex;
@@ -1759,31 +1647,25 @@ a {
     margin-left: 30%;
     color: #000;
   }
-  
   .contacto-h {
     padding-top: 50px;
   }
-  
   .p-contacto {
     display: flex;
     flex-direction: column;
     padding: 20px;
     color: #000;
   }
-  
   /*Pseudoclases*/
-  
   /*a:hover {
     background-color: #977f7f69;
   }
   */
-  
   /*a:active {
     background-color: #977f7f69;
     color: #fff;
   }
   */
-  
   a {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 600;
@@ -1792,24 +1674,10 @@ a {
     color: #000;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 767px) {  
-  
+@media screen and (max-width: 767px) {
   .container-fluid {
     font-size: 20px;
   }
-  
   .boton-enviar {
     width: 100px;
     font-size: 15px;
@@ -1823,7 +1691,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   @keyframes boton-comprar-anime {
     0% {
       width: 25%;
@@ -1835,7 +1702,6 @@ a {
       width: 100%;
     }
   }
-  
   /*.boton-comprar {
     width: 100px;
     height: 30px;
@@ -1851,7 +1717,6 @@ a {
     align-items: center;
   }
   */
-  
   .ben-prom, .titulo-sucursales {
     display: flex;
     flex-direction: row;
@@ -1861,16 +1726,13 @@ a {
     margin-top: 50px;
     background-color: #6610f2;
   }
-  
   .boton-dias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-  
   }
-  
   .todos, .lunes, .martes, .miercoles, .jueves, .viernes, .sabado, .domingo {
     margin: 10px;
     margin-left: 20px;
@@ -1882,7 +1744,6 @@ a {
     color: #fff;
     padding: 5px;
   }
-  
   .flexi-container {
     display: flex;
     flex-direction: column;
@@ -1893,7 +1754,6 @@ a {
     margin: 50px;
     height: auto;
   }
-  
   .flexi-container-home {
     display: flex;
     flex-direction: column;
@@ -1903,7 +1763,6 @@ a {
     margin: 40px;
     height: auto;
   }
-  
   .caj-c1, .caj-c2, .caj-c3, .caj-c4, .caj-c5 {
     display: flex;
     flex-direction: column;
@@ -1911,11 +1770,9 @@ a {
     width: auto;
     height: auto;
   }
-  
   .bbvafrances, .icbc, .modo, .santander, .american {
     width: 150px;
   }
-  
   .boton-comprar-padre {
     display: flex;
     flex-direction: row;
@@ -1923,7 +1780,6 @@ a {
     text-align: center;
     padding-bottom: 25px;
   }
-  
   .boton-borrar {
     width: 200px;
     font-size: 15px;
@@ -1937,7 +1793,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .vermas-boton-padre {
     display: flex;
     flex-direction: row;
@@ -1945,7 +1800,6 @@ a {
     align-items: center;
     padding-bottom: 30px;
   }
-  
   .vermaspro-home {
     width: 230px;
     height: 25px;
@@ -1959,14 +1813,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .carrusel-perfumes {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
     margin-top: auto;
   }
-  
   .elemento {
     flex: 1 0 auto;
     margin: 0 50px;
@@ -1974,53 +1826,44 @@ a {
     width: 200px;
     height: 200px;
   }
-  
   .azzaro-carrusel, .chrome-carrusel, .calvin-carrusel, .carolina-carrusel, .dior-carrusel, .pacorabanne-carrusel, .tom-carrusel, .dolce-carrusel, .yves-carrusel, .invictus-carrusel {
     width: 200px;
     height: 200px;
   }
-  
   .new-arriwals {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
   .new-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .invictus, .tom-ford, .dolce-gabbana, .given-mujer, .given-intense {
     width: 200px;
   }
-  
   .versace-dos, .calvin-klein, .dior-seiscuotas, .azzaro-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .contenedor-yvessaint {
     display: flex;
     justify-content: start;
   }
-  
   .iframe-yvessaint {
     width: 150px;
     height: 300px;
     margin-bottom: 10px;
   }
-  
   .img-yvessaint {
     width: 100px;
     margin-left: auto;
   }
-  
   .yvessaint-contenedor {
     display: flex;
     flex-direction: column;
@@ -2030,23 +1873,19 @@ a {
     border: 2px solid;
     box-shadow: 0 0 30px #000;
   }
-  
   .titulo-yvessaint {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
   .cuotas-yvessaint {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
   .azzaro-publi-tamano, .carolina-publi-tamano, .versace-publi-tamano, .azzaro-puor-publi-tamano {
     width: 250px;
   }
-  
   .container-azzaro, .container-carolina, .container-versace, .container-azzaro-puor {
     position: relative;
     display: inline-block;
@@ -2054,15 +1893,13 @@ a {
     margin: auto;
     margin-left: 50px;
   }
-  
   .azzaro-publi, .carolina-publi, .versace-publi, .azzaro-puor-publi {
     /*Posición de los botones*/
     color: #000;
     position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 100px;
     height: 30px;
@@ -2077,9 +1914,8 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .Creed-fondo {
-    background-image: url('Creed Fondo tres 1600 cortado.jpg');
+    background-image: url("Creed Fondo tres 1600 cortado.jpg");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -2091,13 +1927,11 @@ a {
     text-align: center;
     margin: auto;
   }
-
   .creed-fondo-mediaq {
     width: 350px;
   }
-  
   .Azzaro-Fondo {
-    background-image: url('Azzaro Fondo Web.jpg');
+    background-image: url("Azzaro Fondo Web.jpg");
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -2109,18 +1943,15 @@ a {
     text-align: center;
     margin: auto;
   }
-
   .azzaro-fondo-mediaq {
     width: 350px;
   }
-  
   .cuotas-azzaro-pie {
     color: #000;
     position: absolute;
     top: 75%;
     left: 82%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 40px;
     height: 30px;
@@ -2135,14 +1966,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .cuotas-creed-home {
     color: #000;
     position: absolute;
     top: 28%;
     left: 82%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     /*Personalización de los botones*/
     width: 40px;
     height: 30px;
@@ -2156,16 +1985,14 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .azzaro-imagen-texto {
     font-size: 8px;
     color: #000;
     position: absolute;
     top: 20%;
     left: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .creed-imagen-texto {
     font-size: 10px;
     font-weight: 600;
@@ -2173,18 +2000,16 @@ a {
     position: absolute;
     top: 20%;
     left: 15%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .comprar-cuotas-azzaro {
     font-size: 8px;
     color: #000;
     position: absolute;
     top: 30%;
     left: 80%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .comprar-cuotas-creed {
     color: #000;
     font-size: 10px;
@@ -2192,18 +2017,16 @@ a {
     position: absolute;
     top: 22%;
     left: 85%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .muestra-azzaro {
     font-size: 8px;
     color: #fff;
     position: absolute;
     top: 77%;
     left: 40%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .muestra-creed {
     font-size: 8px;
     font-weight: 600;
@@ -2211,9 +2034,8 @@ a {
     position: absolute;
     top: 30%;
     left: 35%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  
   .card-position {
     display: flex;
     flex-wrap: wrap;
@@ -2222,7 +2044,6 @@ a {
     min-height: 100vh;
     margin-left: 40px;
   }
-  
   .boton-tarjeta {
     width: 100px;
     height: 30px;
@@ -2237,13 +2058,11 @@ a {
     align-items: center;
     margin-left: 32%;
   }
-  
   .card {
     position: relative;
     width: 200px;
     height: 250px;
   }
-  
   .card .face {
     position: absolute;
     width: 100%;
@@ -2251,21 +2070,18 @@ a {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
   }
-  
   .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
   }
-  
   .card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
   .card .front h3 {
     position: absolute;
     bottom: 0;
@@ -2273,10 +2089,9 @@ a {
     height: 45px;
     line-height: 45px;
     color: #fff;
-    background: rgba(0,0,0,.4);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
   }
-  
   .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
@@ -2288,40 +2103,32 @@ a {
     text-align: center;
     box-shadow: 0 5px 10px #000;
   }
-  
   .card .back .link {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
   }
-  
   .card .back .link a {
     color: #f3f3f3;
   }
-  
   .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
   }
-  
   .card .back p {
     letter-spacing: 1px;
   }
-  
   .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
   }
-  
   .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
   }
-  
   .pour, .eros, .blue, .ckblanco, .ckbotella, .cknegro, .dior-addict, .dior-homme, .dior-sport, .azzaro-chrome, .azzaro-themost, .azzaro-tres {
     width: 200px;
     margin-left: 10px;
   }
-  
   iframe {
     width: 25%;
     display: flex;
@@ -2330,7 +2137,6 @@ a {
     align-items: end;
     margin-left: 15px;
   }
-  
   footer {
     display: flex;
     flex-direction: column;
@@ -2339,23 +2145,19 @@ a {
     padding-bottom: auto;
     padding-top: auto;
   }
-  
   .nuestrasredes {
     font-size: 12px;
     padding-left: 5%;
   }
-  
   .whatsapp, .facebook, .instagram, .youtube {
     width: 30px;
     padding-left: 10px;
   }
-  
   .new-piepagina {
     margin: 15px;
     margin-top: 15px;
     font-size: 20px;
   }
-  
   .boton-enviar-home {
     width: 70px;
     height: 28px;
@@ -2365,19 +2167,16 @@ a {
     background-color: #000;
     color: #fff;
   }
-  
   .input-correo {
     width: 200px;
     height: auto;
   }
-  
   .perfumes-clases {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
   .givenchy, .givenchym, .carolinah {
     margin-left: 30px;
     width: 100px;
@@ -2386,7 +2185,6 @@ a {
     text-align: center;
     border: 1px solid;
   }
-  
   .grid-container2 {
     /*Box-modeling*/
     width: 100%;
@@ -2406,11 +2204,9 @@ a {
     align-items: center;
     /*definimos la cantidad de columnas y el anchode las mismas*/
   }
-
   .h6-contacto {
     padding-top: 20px;
   }
-  
   .perfume-hombre-mujer {
     display: flex;
     flex-direction: column;
@@ -2419,7 +2215,6 @@ a {
     text-decoration: solid;
     padding: auto;
   }
-  
   .perf-hombre, .perf-mujer, .perf-unisex {
     display: flex;
     flex-direction: row;
@@ -2428,7 +2223,6 @@ a {
     padding-top: 50px;
     color: #0dcaf0;
   }
-
   .menu-perfumes-categoria {
     display: flex;
     flex-direction: column;
@@ -2436,7 +2230,6 @@ a {
     align-items: center;
     margin-top: 20px;
   }
-  
   .contenedor-titulo-perfumes {
     display: flex;
     flex-direction: column;
@@ -2444,7 +2237,6 @@ a {
     align-items: center;
     transform: translateY(0.5%);
   }
-  
   .contenedor-perfumes {
     display: flex;
     flex-wrap: wrap;
@@ -2452,7 +2244,6 @@ a {
     align-items: center;
     width: 70%;
   }
-  
   .titulo-perfumes {
     display: flex;
     flex-direction: row;
@@ -2462,7 +2253,6 @@ a {
     margin-right: auto;
     margin-left: 25%;
   }
-  
   .parrafo-perfumes, .parrafo-perfumes2 {
     display: flex;
     flex-direction: column;
@@ -2470,7 +2260,6 @@ a {
     text-align: center;
     margin-top: 15px;
   }
-  
   .perfumes-grilla {
     display: flex;
     flex-direction: column;
@@ -2484,20 +2273,16 @@ a {
     box-shadow: 0 0 30px #000;
     overflow: hidden;
   }
-  
   .dol-gab-grilla, .dol-gab-grilla1, .dol-gab-grilla2, .dol-gab-grilla3, .azzaro-most-grilla4, .dol-gab-grilla5, .dol-gab-grilla6, .dol-gab-grilla7, .dol-gab-grilla8, .dol-gab-grilla9, .dol-gab-grilla10, .dol-gab-grilla11, .dol-gab-grilla12, .dol-gab-grilla13, .dol-gab-grilla14 {
     width: 150px;
   }
-  
   .titulo-grilla {
     font-size: 15px;
     font-weight: 700;
   }
-  
   .cuotas-grilla {
     font-weight: 500;
   }
-  
   /*CSS GRID PRACTICA*/
   .encabezado {
     display: flex;
@@ -2508,7 +2293,6 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     padding: auto;
   }
-  
   .grid-container > div {
     /*Box-modeling*/
     display: flex;
@@ -2525,7 +2309,6 @@ a {
     overflow: hidden;
     font-family: "fuente-principal";
   }
-  
   .grid-container {
     /*Box-modeling*/
     width: 90%;
@@ -2537,14 +2320,12 @@ a {
     grid-template-columns: 250px;
     /*definimos la cantidad de columnas y el anchode las mismas*/
   }
-  
   .letras {
     padding-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 12px;
   }
-  
   .marcas-a, .marcas-b, .marcas-c, .marcas-d, .marcas-e, .marcas-f, .marcas-g, .marcas-h, .marcas-i, .marcas-j, .marcas-k, .marcas-l, .marcas-m {
     display: flex;
     flex-direction: column;
@@ -2553,18 +2334,15 @@ a {
     padding: 20px 0px 20px 0px;
     margin: 20px;
   }
-  
   .h4a, .h4b, .h4c, .h4d, .h4e, .h4f, .h4g, .h4h, .h4i, .h4j, .h4k, .h4l, .h4m {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 25px 0px 0px 50px;
   }
-  
-  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci , .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
+  .adolf, .agatha, .alejandro, .alfap, .antban, .arex, .armani, .azzaro, .basiccare, .benetton, .beter, .biotherm, .burberry, .bvlgari, .cacharel, .cal-klein-marcas, .carlos-benaim, .caro-cuore, .chanel, .chloe, .clinique, .compagnie-de-provence, .davidoff, .diesel, .dior, .dior-backstage, .dolce-gabbana-marcas, .dsquared, .elie-saab, .ermenegildo-zegna, .estee-lauder, .fabyoulous, .gama, .gino-bogani, .givenchy-marcas, .gucci, .guerlain-marcas, .halloween, .hermes, .hugoboss, .issey, .karite, .jeanpaul, .arthes, .provence, .jimmy, .karl, .kenzo, .kerastase, .kevin, .klorane, .loreal, .lamer, .laprairie, .lancome-marcas, .lanvin, .loewe-marcas, .lorealprof, .mac, .marcjacobs, .marinade, .max, .maybelline, .mercedes, .michaelkors, .molyneux, .monotheme, .montblanc, .moschino, .mugler-marcas {
     padding: 25px 0px 0px 50px;
   }
-  
   .marcas-contpadre1 {
     display: flex;
     flex-direction: row;
@@ -2572,7 +2350,6 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
-  
   .contenedor {
     width: 85%;
     display: flex;
@@ -2583,7 +2360,6 @@ a {
     margin-left: 15px;
     transform: translateY(0.5%);
   }
-  
   .mapa {
     width: 100%;
     margin: 10px;
@@ -2594,7 +2370,6 @@ a {
     box-shadow: 0 0 30px #000;
     overflow: hidden;
   }
-  
   .iframesucur {
     width: 90%;
     display: flex;
@@ -2603,14 +2378,12 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
   .titulo-sucursal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 10px;
   }
-  
   h2 {
     display: flex;
     justify-content: center;
@@ -2618,11 +2391,9 @@ a {
     margin-right: auto;
     color: #000;
   }
-  
   .ayuda-contacto {
     color: #000;
   }
-  
   .div-input {
     padding: 10px;
     display: flex;
@@ -2632,31 +2403,25 @@ a {
     margin-left: 30%;
     color: #000;
   }
-  
   .contacto-h {
     padding-top: 50px;
   }
-  
   .p-contacto {
     display: flex;
     flex-direction: column;
     padding: 20px;
     color: #000;
   }
-  
   /*Pseudoclases*/
-  
   /*a:hover {
     background-color: #977f7f69;
   }
   */
-  
   /*a:active {
     background-color: #977f7f69;
     color: #fff;
   }
   */
-  
   a {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 600;
@@ -2665,8 +2430,6 @@ a {
     color: #000;
   }
 }
-
-
 
 
 /*# sourceMappingURL=estilos.css.map */
