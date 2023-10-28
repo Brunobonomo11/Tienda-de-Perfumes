@@ -1010,7 +1010,7 @@ h2 {
 
 .bodycarrito {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #141C29;
+  background-color: #638ccc;
   padding-top: 80px;
 }
 
@@ -1082,7 +1082,7 @@ h2 {
 }
 
 .informacion .boton-carrito {
-  background-color: #263143;
+  background-color: #ffffff;
   width: 100px;
   height: 35px;
   border-radius: 10px;
@@ -1094,7 +1094,7 @@ h2 {
 }
 
 .informacion .boton-carrito:hover {
-  background-color: #2D4263;
+  background-color: #f1f3f7;
 }
 
 .scroll {
