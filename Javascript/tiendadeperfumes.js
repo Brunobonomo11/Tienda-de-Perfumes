@@ -110,6 +110,22 @@ console.log(nombre)
 
 console.dir(document.body)
 
+let contenedorcompras = document.getElementById("contenedorcompras");
+console.log(contenedorcompras.innerHTML);
+
+let precioproducto1 = document.getElementsByClassName("precioproducto1");
+console.log(precioproducto1[0].innerHTML);
+
+let precioproducto2 = document.getElementsByClassName("precioproducto2");
+console.log(precioproducto2[0].innerHTML);
+
+let precioproducto3 = document.getElementsByClassName("precioproducto3");
+console.log(precioproducto3[0].innerHTML);
+
+
+
+
+
 
 // PRODUCTO PRECIO EN 3 CUOTAS
 

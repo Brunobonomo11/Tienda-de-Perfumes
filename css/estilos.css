@@ -1020,7 +1020,7 @@ h2 {
   margin: 30px 0px;
 }
 
-.img-carrito1, .img-carrito2 {
+.imgcarrito1, .imgcarrito2, .imgcarrito3, .imgcarrito4, .imgcarrito5, .imgcarrito6, .imgcarrito7, .imgcarrito8, .imgcarrito9, .imgcarrito10, .imgcarrito11, .imgcarrito12 {
   width: 320px;
   height: 340px;
   object-fit: cover;
@@ -1076,7 +1076,7 @@ h2 {
   font-weight: 300;
 }
 
-.informacion .precio-producto1 {
+.informacion .precioproducto1 .precioproducto2 .precioproducto3 .precioproducto4 .precioproducto5 .precioproducto6 .precioproducto7 .precioproducto8 .precioproducto9 .precioproducto10 .precioproducto11 .precioproducto12  {
   font-size: 20px;
   font-weight: 500;
 }
