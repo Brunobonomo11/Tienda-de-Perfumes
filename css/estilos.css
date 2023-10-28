@@ -1081,7 +1081,7 @@ h2 {
   font-weight: 500;
 }
 
-.informacion .boton-carrito {
+.informacion .botoncarrito {
   background-color: #ffffff;
   width: 100px;
   height: 35px;
@@ -1093,7 +1093,7 @@ h2 {
   cursor: pointer;
 }
 
-.informacion .boton-carrito:hover {
+.informacion .botoncarrito:hover {
   background-color: #f1f3f7;
 }
 

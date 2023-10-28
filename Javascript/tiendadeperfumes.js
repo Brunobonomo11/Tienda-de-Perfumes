@@ -93,9 +93,9 @@ let perfume3 = new Perfume("The one pour homme EDP", "79800", "()", "6");
 let perfume4 = new Perfume("The one only one EDP", "112600", "()", "6");
 let perfume5 = new Perfume("The most wanted EDP", "89300", "()", "6");
 let perfume6 = new Perfume("Paco rabanne lady million EDP", "87600", "()", "6");
-let perfume7 = new Perfume("Tom ford oud wood EDP", "$132.500", "()", "6");
+let perfume7 = new Perfume("Tom ford oud wood EDP", "132.500", "()", "6");
 let perfume8 = new Perfume("Tom ford tobaco and vainille EDP", "$125300", "()", "6");
-let perfume9 = new Perfume("Azzaro chrome EDP", "$152.630", "()", "6");
+let perfume9 = new Perfume("Azzaro chrome EDP", "152.630", "()", "6");
 
 const perfumes = [];
 perfumes.push(new Perfume("One million deluxe EDP", "123400", "()", "6"));
@@ -108,8 +108,6 @@ Perfume.sumaIva()
 const nombre = perfumes.map((el) => el.nombre)
 console.log(nombre)
 
-console.dir(document.body)
-
 let contenedorcompras = document.getElementById("contenedorcompras");
 console.log(contenedorcompras.innerHTML);
 
@@ -119,8 +117,73 @@ console.log(precioproducto1[0].innerHTML);
 let precioproducto2 = document.getElementsByClassName("precioproducto2");
 console.log(precioproducto2[0].innerHTML);
 
-let precioproducto3 = document.getElementsByClassName("precioproducto3");
-console.log(precioproducto3[0].innerHTML);
+let precioproducto4 = document.getElementsByClassName("precioproducto4");
+console.log(precioproducto4[0].innerHTML);
+
+let precioproducto5 = document.getElementsByClassName("precioproducto5");
+console.log(precioproducto5[0].innerHTML);
+
+let precioproducto6 = document.getElementsByClassName("precioproducto6");
+console.log(precioproducto6[0].innerHTML);
+
+let precioproducto7 = document.getElementsByClassName("precioproducto7");
+console.log(precioproducto7[0].innerHTML);
+
+let precioproducto8 = document.getElementsByClassName("precioproducto8");
+console.log(precioproducto8[0].innerHTML);
+
+let precioproducto9 = document.getElementsByClassName("precioproducto9");
+console.log(precioproducto9[0].innerHTML);
+
+let precioproducto10 = document.getElementsByClassName("precioproducto10");
+console.log(precioproducto10[0].innerHTML);
+
+let precioproducto11 = document.getElementsByClassName("precioproducto11");
+console.log(precioproducto11[0].innerHTML);
+
+let precioproducto12 = document.getElementsByClassName("precioproducto12");
+console.log(precioproducto12[0].innerHTML);
+
+// PRECIO CON DESCUENTO
+
+precioproducto1.innerText = "$95.620"
+console.log(precioproducto1.innerText)
+
+// ELIMINAMOS PRECIO 12 QUE NO TIENE EL DESCUENTO
+
+precioproducto12[0].remove();
+
+// AGREGAMOS OPCIONES DESDE EL ARRAY MARCAS
+
+const arrayNuevosPerfumes = ["CHANEL", "KERASTASE", "DIOR", "GIVENCHY"];
+arrayNuevosPerfumes.push("HERMES")
+console.log(arrayNuevosPerfumes.length);
+
+// AGREGAMOS EVENTOS
+
+let boton = document.getElementsByClassName("botoncarrito")
+boton.onclick = () => {console.log("Click")}
+boton.onmousemouve = () => {console.log("Move")}
+
+// AGREGAMOS LocalStorage
+
+localStorage.setItem("bienvenido", "Hola Tienda de Perfumes");
+localStorage.setItem("esValido", true);
+localStorage.setItem("unNumero", 23);
+
+// LocalStorage Getitem
+
+let mensaje = localStorage.getItem("bienvenido");
+let bandeja = localStorage.getItem("esValido");
+let numero = localStorage.getItem("unNumero");
+
+console.log(mensaje);
+console.log(bandeja);
+console.log(numero);
+
+
+
+console.dir(document.body)
 
 
 
