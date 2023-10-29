@@ -1,5 +1,3 @@
-const { default: Swal } = require("sweetalert2");
-
 const headercarrito = document.querySelector("#header");
 const contenedorcarrito = document.querySelector("contenedorcarrito");
 const bodycarrito = document.querySelector("bodycarrito");
@@ -11,13 +9,6 @@ window.addEventListener("scroll", function(){
     else{
         headercarrito.classList.remove("scroll")
     }
-})
-
-Swal.fire({
-    title: 'Error!',
-    text: 'Queres continuar?',
-    icon: 'error',
-    confirmButtonText: 'Cool'
 })
 
 
