@@ -13,7 +13,7 @@ window.addEventListener("scroll", function(){
 
 // PRIMER PRE-ENTREGA PROYECTO FINAL 
 
-alert("BIENVENIDOS A TIENDA DE PERFUMES")
+/*alert("BIENVENIDOS A TIENDA DE PERFUMES")
 
 let nombreIngresado = prompt("Ingrese su Nombre");
 let apellidoIngresado = prompt("Ingrese su Apellido")
@@ -60,7 +60,14 @@ for (let i = 0; i < 10; i++) {
     }
     console.log(i);
 
-}
+}*/
+
+Swal.fire({
+    title: 'Error!',
+    text: 'Queres continuar?',
+    icon: 'error',
+    confirmButtonText: 'Cool'
+})
 
 
 
@@ -209,6 +216,34 @@ console.log(fragancia6.id); */
 
 console.dir(document.body)
 
+
+// RECUPERAMOS ESTADOS PREVIOS
+
+let usuario;
+let usuarioEnLS = JSON.stringify(localStorage.getItem("usuario"))
+
+// SI HABIA ALGO ALMACENADO LO RECUPERAMOS
+
+if (usuarioEnLS) {
+    usuario = usuarioEnLS
+} else {
+    usuario = prompt("Ingrese su nombre de usuario")
+}
+
+// ALMACENAR ARRAY DE OBJETOS
+
+/*let carrito = []
+let carritoEnLS = JSON.stringify(localStorage.getItem("carrito"))
+
+// INICIALIZO MI APP CON CARRITO COMO ARRAY VACIO O CON EL REGISTRO QUE HAYA QUEDADO EN LS
+
+if(carritoEnLS) {
+    carrito = carritoEnLS
+}
+
+// FUNCION QUE RENDERIZARIA EL CARRITO
+
+renderCarrito (carrito)*/
 
 // ELIMINAMOS DATOS ALMACENADOS EN EL LOCAL STORAGE
 
