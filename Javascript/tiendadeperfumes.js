@@ -33,7 +33,7 @@ console.log("Usted ha seleccionado Paco Rabanne")
 
 const arrayMarcas = ["","DOLCE & GABANNA","AZZARO","PACO RABANNE","TOM FORD","JEAN PAUL GAULTIER"];
 arrayMarcas.push("YVES SAINT LAURENT")
-console.log(arrayMarcas.length);
+// console.log(arrayMarcas.length);
 
 
 let perfumeIngresado = prompt("Ingrese un Perfume ej Azzaro");
@@ -55,7 +55,7 @@ while(entrada != "exit"){
 console.log("Escriba un perfume a seleccionar")
 
 for (let i = 0; i < 10; i++) {
-    if (i == 7){
+    if (i == 8){
         break;
     }
     console.log(i);
@@ -94,7 +94,7 @@ let perfume4 = new Perfume("The one only one EDP", "112600", "()", "6");
 let perfume5 = new Perfume("The most wanted EDP", "89300", "()", "6");
 let perfume6 = new Perfume("Paco rabanne lady million EDP", "87600", "()", "6");
 let perfume7 = new Perfume("Tom ford oud wood EDP", "132.500", "()", "6");
-let perfume8 = new Perfume("Tom ford tobaco and vainille EDP", "$125300", "()", "6");
+let perfume8 = new Perfume("Tom ford tobaco and vainille EDP", "125300", "()", "6");
 let perfume9 = new Perfume("Azzaro chrome EDP", "152.630", "()", "6");
 
 const perfumes = [];
@@ -108,56 +108,56 @@ Perfume.sumaIva()
 const nombre = perfumes.map((el) => el.nombre)
 console.log(nombre)
 
-let contenedorcompras = document.getElementById("contenedorcompras");
-console.log(contenedorcompras.innerHTML);
+// let contenedorcompras = document.getElementById("contenedorcompras");
+// console.log(contenedorcompras.innerHTML);
 
-let precioproducto1 = document.getElementsByClassName("precioproducto1");
-console.log(precioproducto1[0].innerHTML);
+//let precioproducto1 = document.getElementsByClassName("precioproducto1");
+//console.log(precioproducto1[0].innerHTML);
 
-let precioproducto2 = document.getElementsByClassName("precioproducto2");
-console.log(precioproducto2[0].innerHTML);
+//let precioproducto2 = document.getElementsByClassName("precioproducto2");
+//console.log(precioproducto2[0].innerHTML);
 
-let precioproducto4 = document.getElementsByClassName("precioproducto4");
-console.log(precioproducto4[0].innerHTML);
+//let precioproducto4 = document.getElementsByClassName("precioproducto4");
+//console.log(precioproducto4[0].innerHTML);
 
-let precioproducto5 = document.getElementsByClassName("precioproducto5");
-console.log(precioproducto5[0].innerHTML);
+//let precioproducto5 = document.getElementsByClassName("precioproducto5");
+//console.log(precioproducto5[0].innerHTML);
 
-let precioproducto6 = document.getElementsByClassName("precioproducto6");
-console.log(precioproducto6[0].innerHTML);
+//let precioproducto6 = document.getElementsByClassName("precioproducto6");
+//console.log(precioproducto6[0].innerHTML);
 
-let precioproducto7 = document.getElementsByClassName("precioproducto7");
-console.log(precioproducto7[0].innerHTML);
+//let precioproducto7 = document.getElementsByClassName("precioproducto7");
+//console.log(precioproducto7[0].innerHTML);
 
-let precioproducto8 = document.getElementsByClassName("precioproducto8");
-console.log(precioproducto8[0].innerHTML);
+//let precioproducto8 = document.getElementsByClassName("precioproducto8");
+//console.log(precioproducto8[0].innerHTML);
 
-let precioproducto9 = document.getElementsByClassName("precioproducto9");
-console.log(precioproducto9[0].innerHTML);
+//let precioproducto9 = document.getElementsByClassName("precioproducto9");
+//console.log(precioproducto9[0].innerHTML);
 
-let precioproducto10 = document.getElementsByClassName("precioproducto10");
-console.log(precioproducto10[0].innerHTML);
+//let precioproducto10 = document.getElementsByClassName("precioproducto10");
+//console.log(precioproducto10[0].innerHTML);
 
-let precioproducto11 = document.getElementsByClassName("precioproducto11");
-console.log(precioproducto11[0].innerHTML);
+//let precioproducto11 = document.getElementsByClassName("precioproducto11");
+//console.log(precioproducto11[0].innerHTML);
 
-let precioproducto12 = document.getElementsByClassName("precioproducto12");
-console.log(precioproducto12[0].innerHTML);
+//let precioproducto12 = document.getElementsByClassName("precioproducto12");
+//console.log(precioproducto12[0].innerHTML);
 
 // PRECIO CON DESCUENTO
 
-precioproducto1.innerText = "$95.620"
-console.log(precioproducto1.innerText)
+//precioproducto1.innerText = "$95.620"
+//console.log(precioproducto1.innerText)
 
 // ELIMINAMOS PRECIO 12 QUE NO TIENE EL DESCUENTO
 
-precioproducto12[0].remove();
+// precioproducto12[0].remove();
 
 // AGREGAMOS OPCIONES DESDE EL ARRAY MARCAS
 
 const arrayNuevosPerfumes = ["CHANEL", "KERASTASE", "DIOR", "GIVENCHY"];
 arrayNuevosPerfumes.push("HERMES")
-console.log(arrayNuevosPerfumes.length);
+// console.log(arrayNuevosPerfumes.length);
 
 // AGREGAMOS EVENTOS
 
@@ -178,19 +178,53 @@ let bandeja = localStorage.getItem("esValido");
 let numero = localStorage.getItem("unNumero");
 
 console.log(mensaje);
-console.log(bandeja);
-console.log(numero);
+// console.log(bandeja);
+// console.log(numero);
 
+// CICLO PARA RECORRER LAS CLAVES ALMACENADAS EN EL OBJETO LOCALStorage
 
+//for (let i = 0; i < localStorage.length; i++) {
+    //let clave = localStorage.key(i);
+    // console.log("Clave: "+ clave);
+    //console.log("Valor: "+ localStorage.getItem(clave));
+//}
+
+// ALMACENAMOS TODOS LOS PERFUMES EN EL STORAGE
+
+// STRINGIFY
+
+const fragancia1 = {id: 1, fragancia: "The one gold EDP", precio: "108520", esencia: "amaderada"};
+const enJSON = JSON.stringify(fragancia1);
+
+console.log(enJSON);
+console.log(typeof fragancia1);
+console.log(typeof enJSON);
+
+localStorage.setItem("fragancia1", fragancia1);
+
+// PARSE
+
+//const enJSON1 = '{"id":2,"fragancia":"The one gold EDP","precio":108520,"esencia":"amaderada"}'
+//const fragancia2 = JSON.parse(enJSON1);
+
+//console.log(typeof enJSON1);
+//console.log(typeof fragancia2);
+//console.log(fragancia1.fragancia);
+
+//const fragancia3 = JSON.parse(localStorage.getItem("fragancia2"));
+
+//console.log(fragancia3.id);
 
 console.dir(document.body)
 
 
+// ELIMINAMOS DATOS ALMACENADOS EN EL LOCAL STORAGE
+
+//localStorage.clear();
+//sessionStorage.clear();
 
 
-
-
-// PRODUCTO PRECIO EN 3 CUOTAS
+// PRODUCTO PRECIO EN 6 CUOTAS
 
 perfume1.precioCuotas();
 perfume2.precioCuotas();
