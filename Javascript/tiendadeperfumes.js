@@ -1,4 +1,4 @@
-const headercarrito = document.querySelector("#header");
+/*const headercarrito = document.querySelector("#header");
 const contenedorcarrito = document.querySelector("contenedorcarrito");
 const bodycarrito = document.querySelector("bodycarrito");
 
@@ -9,9 +9,7 @@ window.addEventListener("scroll", function(){
     else{
         headercarrito.classList.remove("scroll")
     }
-})
-
-
+}) */
 
 /*alert("BIENVENIDOS A TIENDA DE PERFUMES")
 
@@ -62,7 +60,22 @@ for (let i = 0; i < 10; i++) {
 
 }*/
 
+// AGREGAMOS SWEET ALERT
 
+Swal.fire({
+    title: 'Quieres continuar en nuestra tienda?',
+    showDenyButton: true,
+    showCancelButton: 'Cancelar',
+    confirmButtonText: 'Continuar',
+    denyButtonText: `No quiero continuar`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire('Correcto!', '', 'success')
+    } else if (result.isDenied) {
+      Swal.fire('Lamentamos que te vayas', '', 'info')
+    }
+  })
 
 const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
 { id: 2, perfume: "The one light blue EDP", precio: 96450, aroma: "frutal"},
