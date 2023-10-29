@@ -64,51 +64,54 @@ for (let i = 0; i < 10; i++) {
 
 
 
+
+const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
+{ id: 2, perfume: "The one light blue EDP", precio: 96450, aroma: "frutal"},
+{ id: 3, perfume: "The one pour homme EDP", precio: 79800, aroma: "amaderado"},
+{ id: 4, perfume: "The one only one EDP", precio: 112600, aroma: "lavanda"},
+{ id: 5, perfume: "The most wanted EDP", precio: 89300, aroma: "citrus"},
+{ id: 6, perfume: "Paco rabanne lady million EDP", precio: 87600, aroma: "fresh"},
+{ id: 7, perfume: "Tom ford oud wood EDP", precio: 132500, aroma: "aromatico"},
+{ id: 8, perfume: "Tom ford tobaco and vainille EDP", precio: 125300, aroma: "vainilla"},
+{ id: 9, perfume: "Azzaro chrome EDP", precio: 152630, aroma: "frutal"},
+{ id: 10, perfume: "One million deluxe EDP", precio: 123400, aroma: "amaderado"},
+{ id: 11, perfume: "PR Invictus EAU", precio: 105250, aroma: "aromatico,frutal"}];
+
+
+
+const guardarLocal = (clave, valor) => {localStorage.setItem(clave, valor)};
+
+
+// ALMACENAMOS ARRAY COMPLETO 
+
+guardarLocal("listaProductos", JSON.stringify(Perfumes));
+
+
+
 class Perfume {
-    constructor(nombre, precioLista, precioCuotas, cuotas) {
-        this.nombre = nombre.toUpperCase();
-        this.precioLista = parseFloat(precioLista);
-        this.cuotas = parseFloat(cuotas)
-        this.Valorcuotas = parseFloat(precioCuotas);
-        this.vendido = false;
+    constructor(obj) {
+        this.nombre = obj.perfume.toUpperCase();
+        this.precio = parseFloat(obj.precio);
     }
     sumaIva() {
-    this.precioLista = this.precioLista * 1.21;
-    }
-    // PRECIO EN 6 CUOTAS
-    precioCuotas() {
-        this.Valorcuotas = this.precioLista * 1.21 / 6;
-    }
-    // trescuotasPrecio() {
-    //     this.precioLista = this.precioLista / 3;
-    // }
-    vender() {
-        this.vendido = true;
+        this.precio = this.precio * 1.21;
     }
 }
 
-let perfume1 = new Perfume("The one gold EDP", "108520", "()", "6");
-let perfume2 = new Perfume("The one light blue EDP", "96450", "()", "6");
-let perfume3 = new Perfume("The one pour homme EDP", "79800", "()", "6");
-let perfume4 = new Perfume("The one only one EDP", "112600", "()", "6");
-let perfume5 = new Perfume("The most wanted EDP", "89300", "()", "6");
-let perfume6 = new Perfume("Paco rabanne lady million EDP", "87600", "()", "6");
-let perfume7 = new Perfume("Tom ford oud wood EDP", "132.500", "()", "6");
-let perfume8 = new Perfume("Tom ford tobaco and vainille EDP", "125300", "()", "6");
-let perfume9 = new Perfume("Azzaro chrome EDP", "152.630", "()", "6");
 
-const perfumes = [];
-perfumes.push(new Perfume("One million deluxe EDP", "123400", "()", "6"));
-perfumes.push(new Perfume("PR Invictus EAU", "105250", "()", "6"));
-perfumes.push(new Perfume("Ultraviolet for women EAU", "82300", "()", "6"));
 
-for (const Perfume of perfumes)
-Perfume.sumaIva()
 
-const nombre = perfumes.map((el) => el.nombre)
-console.log(nombre)
+// OBTENEMOS EL LISTADO DE PRODUCTOS ALMACENADOS
 
-// let contenedorcompras = document.getElementById("contenedorcompras");
+const almacenados = JSON.parse(localStorage.getItem("listaProductos"));
+
+for (const objeto of almacenados)
+    Perfumes.push(new Perfume(objeto));
+
+
+
+
+    // let contenedorcompras = document.getElementById("contenedorcompras");
 // console.log(contenedorcompras.innerHTML);
 
 //let precioproducto1 = document.getElementsByClassName("precioproducto1");
@@ -123,35 +126,8 @@ console.log(nombre)
 //let precioproducto5 = document.getElementsByClassName("precioproducto5");
 //console.log(precioproducto5[0].innerHTML);
 
-//let precioproducto6 = document.getElementsByClassName("precioproducto6");
-//console.log(precioproducto6[0].innerHTML);
 
-//let precioproducto7 = document.getElementsByClassName("precioproducto7");
-//console.log(precioproducto7[0].innerHTML);
 
-//let precioproducto8 = document.getElementsByClassName("precioproducto8");
-//console.log(precioproducto8[0].innerHTML);
-
-//let precioproducto9 = document.getElementsByClassName("precioproducto9");
-//console.log(precioproducto9[0].innerHTML);
-
-//let precioproducto10 = document.getElementsByClassName("precioproducto10");
-//console.log(precioproducto10[0].innerHTML);
-
-//let precioproducto11 = document.getElementsByClassName("precioproducto11");
-//console.log(precioproducto11[0].innerHTML);
-
-//let precioproducto12 = document.getElementsByClassName("precioproducto12");
-//console.log(precioproducto12[0].innerHTML);
-
-// PRECIO CON DESCUENTO
-
-//precioproducto1.innerText = "$95.620"
-//console.log(precioproducto1.innerText)
-
-// ELIMINAMOS PRECIO 12 QUE NO TIENE EL DESCUENTO
-
-// precioproducto12[0].remove();
 
 // AGREGAMOS OPCIONES DESDE EL ARRAY MARCAS
 
@@ -159,17 +135,23 @@ const arrayNuevosPerfumes = ["CHANEL", "KERASTASE", "DIOR", "GIVENCHY"];
 arrayNuevosPerfumes.push("HERMES")
 // console.log(arrayNuevosPerfumes.length);
 
+
+
 // AGREGAMOS EVENTOS
 
 let boton = document.getElementsByClassName("botoncarrito")
 boton.onclick = () => {console.log("Click")}
 boton.onmousemouve = () => {console.log("Move")}
 
+
+
 // AGREGAMOS LocalStorage
 
 localStorage.setItem("bienvenido", "Hola Tienda de Perfumes");
 localStorage.setItem("esValido", true);
 localStorage.setItem("unNumero", 23);
+
+
 
 // LocalStorage Getitem
 
@@ -181,39 +163,49 @@ console.log(mensaje);
 // console.log(bandeja);
 // console.log(numero);
 
-// CICLO PARA RECORRER LAS CLAVES ALMACENADAS EN EL OBJETO LOCALStorage
 
-//for (let i = 0; i < localStorage.length; i++) {
-    //let clave = localStorage.key(i);
-    // console.log("Clave: "+ clave);
-    //console.log("Valor: "+ localStorage.getItem(clave));
-//}
-
-// ALMACENAMOS TODOS LOS PERFUMES EN EL STORAGE
 
 // STRINGIFY
 
-const fragancia1 = {id: 1, fragancia: "The one gold EDP", precio: "108520", esencia: "amaderada"};
+const fragancia1 = {id: 1, fragancia: "The one gold EDP", precio: 108520, esencia: "amaderada"};
 const enJSON = JSON.stringify(fragancia1);
 
 console.log(enJSON);
 console.log(typeof fragancia1);
 console.log(typeof enJSON);
 
-localStorage.setItem("fragancia1", fragancia1);
+localStorage.setItem("fragancia1", enJSON);
+
+const fragancia2 = {id: 2, fragancia: "The one light blue EDP", precio: 96450, esencia: "frutal"};
+const enJSON2 = JSON.stringify(fragancia2);
+
+console.log(enJSON2);
+console.log(typeof fragancia2);
+console.log(typeof enJSON2);
+
+localStorage.setItem("fragancia2", enJSON2);
+
+const fragancia3 = {id: 3, fragancia: "The one pour homme EDP", precio: 79800, esencia: "violetas"};
+const enJSON3 = JSON.stringify(fragancia3);
+
+console.log(enJSON3);
+console.log(typeof fragancia3);
+console.log(typeof enJSON3);
+
+localStorage.setItem("fragancia3", enJSON3);
 
 // PARSE
 
-//const enJSON1 = '{"id":2,"fragancia":"The one gold EDP","precio":108520,"esencia":"amaderada"}'
-//const fragancia2 = JSON.parse(enJSON1);
+/*const enJSON5 = '{"id":6,"fragancia":"The one gold EDP","precio":108520,"esencia":"amaderada"}'
+const fragancia5 = JSON.parse(enJSON5);
 
-//console.log(typeof enJSON1);
-//console.log(typeof fragancia2);
-//console.log(fragancia1.fragancia);
+console.log(typeof enJSON5);
+console.log(typeof fragancia5);
+console.log(fragancia5.fragancia);
 
-//const fragancia3 = JSON.parse(localStorage.getItem("fragancia2"));
+const fragancia6 = JSON.parse(localStorage.getItem("fragancia3"));
 
-//console.log(fragancia3.id);
+console.log(fragancia6.id); */
 
 console.dir(document.body)
 
@@ -222,40 +214,3 @@ console.dir(document.body)
 
 //localStorage.clear();
 //sessionStorage.clear();
-
-
-// PRODUCTO PRECIO EN 6 CUOTAS
-
-perfume1.precioCuotas();
-perfume2.precioCuotas();
-perfume3.precioCuotas();
-perfume4.precioCuotas();
-perfume5.precioCuotas();
-perfume6.precioCuotas();
-perfume7.precioCuotas();
-perfume8.precioCuotas();
-perfume9.precioCuotas();
-
-// PRODUCTO PRECIO + IVA
-
-perfume1.sumaIva();
-perfume2.sumaIva();
-perfume3.sumaIva();
-perfume4.sumaIva();
-perfume5.sumaIva();
-perfume6.sumaIva();
-perfume7.sumaIva();
-perfume8.sumaIva();
-perfume9.sumaIva();
-
-// PRODUCTO VENDIDO
-
-perfume1.vender();
-perfume2.vender();
-perfume3.vender();
-perfume4.vender();
-perfume5.vender();
-perfume6.vender();
-perfume7.vender();
-perfume8.vender();
-perfume9.vender();
