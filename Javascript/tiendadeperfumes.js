@@ -77,6 +77,8 @@ Swal.fire({
     }
   })
 
+
+
 const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
 { id: 2, perfume: "The one light blue EDP", precio: 96450, aroma: "frutal"},
 { id: 3, perfume: "The one pour homme EDP", precio: 79800, aroma: "amaderado"},
@@ -151,11 +153,11 @@ arrayNuevosPerfumes.push("HERMES")
 
 // AGREGAMOS EVENTOS
 
-let boton = document.getElementsByClassName("botoncarrito")
-boton.onclick = () => {console.log("Click")}
-boton.onmousemouve = () => {console.log("Move")}
-
-
+let boton = document.getElementById("btnprincipal")
+boton.addEventListener("click", respuestaClick)
+function respuestaClick() {
+    console.log("Respuesta evento");
+}
 
 // AGREGAMOS LocalStorage
 
