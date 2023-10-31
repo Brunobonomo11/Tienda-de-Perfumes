@@ -294,6 +294,28 @@ if (usuarioEnLS) {
     usuario = prompt("Ingrese su nombre de usuario")
 }
 
+// SET TIME OUT
+
+let tiempo = 3000;
+
+let timeout = setTimeout (() => {
+  console.log("");
+}, tiempo);
+
+// CLEAR TIMEOUT
+
+clearTimeout(timeout);
+
+// SET INTERVAL
+
+let intervalo = setInterval(() => {
+  console.log("Solicitamos su nombre de usuario " + tiempo / 1000 + "");
+  tiempo += 3000;
+  
+  // CLEAR INTERVAL
+  if(tiempo >= 12000) clearInterval(intervalo);
+}, tiempo);
+
 // ALMACENAR ARRAY DE OBJETOS
 
 /*let carrito = []
