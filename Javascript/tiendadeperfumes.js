@@ -236,6 +236,8 @@ console.log(mensaje);
 
 
 
+
+
 // STRINGIFY
 
 const fragancia1 = {id: 1, fragancia: "The one gold EDP", precio: 108520, esencia: "amaderada"};
@@ -281,10 +283,13 @@ console.log(fragancia6.id); */
 console.dir(document.body)
 
 
+
 // RECUPERAMOS ESTADOS PREVIOS
 
 let usuario;
 let usuarioEnLS = JSON.stringify(localStorage.getItem("usuario"))
+
+
 
 // SI HABIA ALGO ALMACENADO LO RECUPERAMOS
 
@@ -294,7 +299,37 @@ if (usuarioEnLS) {
     usuario = prompt("Ingrese su nombre de usuario")
 }
 
+
+
 // SET TIME OUT
+
+console.log("Inicia proceso")
+
+setTimeout(() => {
+  console.log("Solicitamos su nombre de usuario")
+}, 2000)
+
+console.log("Fin proceso")
+
+
+
+
+// CALL STACK
+
+function multiply (x, y) {
+  return x * y;
+}
+
+function printSquare (x) {
+  let s = multiply(x,
+    x);
+      console.log(s);
+}
+
+printSquare(5); 
+
+
+
 
 let tiempo = 3000;
 
@@ -313,8 +348,51 @@ let intervalo = setInterval(() => {
   tiempo += 3000;
   
   // CLEAR INTERVAL
-  if(tiempo >= 12000) clearInterval(intervalo);
-}, tiempo);
+  if(tiempo >= 9000) clearInterval(intervalo);
+}, tiempo); 
+
+
+// PROMESAS
+
+
+const eventoFuturo = (res) => {
+  return new Promise ( (resolve, reject) => {
+    if (res === true) {
+      resolve ("Promesa resuelta")
+    } else {
+      reject ("Promesa rechazada")
+    }
+  })
+} 
+
+console.log( eventoFuturo(true))
+console.log( eventoFuturo(false)) 
+
+
+// THEN & CATCH
+
+eventoFuturo(true)
+.then((response) => {
+  console.log(response)
+})
+
+eventoFuturo(false)
+.catch((error) => {
+  console.log(error)
+}) 
+
+
+// FETCH 
+
+/* function crearTodo (data) {
+  let todo = document.createElement("div");
+  todo.className = "divItem";
+  todo.innerHTML =
+  `<h2>${data.id}</h2><p>${data.title}</p>` +
+    (data.completed ? "<span>✅</span>" : "<span>🔄</span>");
+  return todo;
+} */
+
 
 // ALMACENAR ARRAY DE OBJETOS
 
