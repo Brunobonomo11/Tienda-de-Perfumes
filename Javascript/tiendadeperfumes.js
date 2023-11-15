@@ -1,20 +1,70 @@
 // AGREGAMOS SWEET ALERT
+(async () => {
+  const {value: Usuario} = await Swal.fire({
+    title: "Bienvenidos a Tienda de Perfumes",
+    text: "Tenemos las majores fragancias del mundo para vos",
+    // html:
+    icon: "success",
+    confirmButtonText: "Ingresar",
+    // footer:
+    // width:
+    // padding:
+    // background:
+    // grow:
+    // backdrop:
+    timer: 10000,
+    timerProgressBar: true,
+    // toast:
+    // position:
+    allowOutsideClick: true,
+    // allowEscapeKey:
+    // allowEnterKey:
+    // stopKeydownPropagation:
+  
+    input: 'text',
+    inputPlaceholder: 'Usuario',
+    // inputValue:
+  
+    // showConfirmButton:
+    // confirmButtonColor:
+    // confirmButtonAriaLabel:
+  
+    // showCancelButton:
+    // cancelButtonText:
+    // cancelButtonColor:
+    // cancelButtonAriaLabel:
+    
+    // buttonsStyling:
+    // showCloseButton:
+    // closeButtonAriaLabel:
+  
+    // imageUrl:
+    // imageWidth:
+    // imageHeight:
+    // imageAlt:
+  });
 
-Swal.fire({
+  if (Usuario){
+    Swal.fire({
+        title: 'Bienvenido ${Usuario}'
+    });
+  }
+})()
+
+/*Swal.fire({
     title: 'Quieres continuar en nuestra tienda?',
     showDenyButton: true,
     showCancelButton: 'Cancelar',
     confirmButtonText: 'Continuar',
     denyButtonText: `No quiero continuar`,
   }).then((result) => {
-    /* Read more about isConfirmed, isDenied below */
+    Read more about isConfirmed, isDenied below 
     if (result.isConfirmed) {
       Swal.fire('Correcto!', '', 'success')
     } else if (result.isDenied) {
       Swal.fire('Lamentamos que te vayas', '', 'info')
     }
-  })
-
+  }) */
 
 
 const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
@@ -27,7 +77,11 @@ const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "
 { id: 8, perfume: "Tom ford tobaco and vainille EDP", precio: 125300, aroma: "vainilla"},
 { id: 9, perfume: "Azzaro chrome EDP", precio: 152630, aroma: "frutal"},
 { id: 10, perfume: "One million deluxe EDP", precio: 123400, aroma: "amaderado"},
-{ id: 11, perfume: "PR Invictus EAU", precio: 105250, aroma: "aromatico,frutal"}];
+{ id: 11, perfume: "PR Invictus EAU", precio: 105250, aroma: "aromatico,frutal"},
+{ id: 12, perfume: "Yves Saint Laurent MYSL", precio: 136256, aroma: "bosque, amaderado"},
+{ id: 13, perfume: "Jean Paul Gaultier Divine", precio: 155203, aroma: "aromatico,frutal"},
+{ id: 14, perfume: "Paco Rabanne Puor Homme EDP", precio: 94300, aroma: "bosque, jardin"},
+{ id: 15, perfume: "Paco Rabanne One million deluxe EDP", precio: 123400, aroma: "aromatico"}];
 
 
 
@@ -267,16 +321,55 @@ eventoFuturo(false)
 }) 
 
 
-// FETCH 
+// AGREGAMOS LISTA DE TAREAS TO-DOs FETCH & AJAX 
 
-/* function crearTodo (data) {
+function crearTodo (data) {
   let todo = document.createElement("div");
   todo.className = "divItem";
   todo.innerHTML =
   `<h2>${data.id}</h2><p>${data.title}</p>` +
     (data.completed ? "<span>✅</span>" : "<span>🔄</span>");
   return todo;
-} */
+}
+
+// GET
+let todos = document.getElementById("todos");
+
+document.getElementById("idUser").addEventListener("input", (e) => {
+  let id = e.target.value;
+  todos.innerHTML = '';
+
+  fetch(`https://jsonplaceholder.typicode.com/users/${id}/todos`)
+  .then((response) => response.json())
+  .then((data) => {
+    // console.log(data);
+    for (const item of data) {
+      todos.appendChild(crearTodo(item))
+    }
+  })
+
+})
+
+// POST
+
+document.getElementById("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let [texto, completa] = e.target.children;
+
+  fetch("https://jsonplaceholder.typicode.com/todos", {
+    method: 'POST',
+    body: JSON.stringify({
+      title: texto.value, 
+      complete: completa.checked, 
+      userID: 1,
+    }),
+    headers: {"Content-type": "application/json; charset=UTF-8"},
+  })
+  .then((response) => response.json())
+  .then((data) => {
+    todos.appendChild(crearTodo(data));
+  });
+});
 
 
 // ALMACENAR ARRAY DE OBJETOS
