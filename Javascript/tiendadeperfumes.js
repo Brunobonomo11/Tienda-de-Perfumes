@@ -1,71 +1,19 @@
 // AGREGAMOS SWEET ALERT
-(async () => {
-  const {value: Usuario} = await Swal.fire({
-    title: "Bienvenidos a Tienda de Perfumes",
-    text: "Tenemos las majores fragancias del mundo para vos",
-    // html:
-    icon: "success",
-    confirmButtonText: "Ingresar",
-    // footer:
-    // width:
-    // padding:
-    // background:
-    // grow:
-    // backdrop:
-    timer: 10000,
-    timerProgressBar: true,
-    // toast:
-    // position:
-    allowOutsideClick: true,
-    // allowEscapeKey:
-    // allowEnterKey:
-    // stopKeydownPropagation:
-  
-    input: 'text',
-    inputPlaceholder: 'Usuario',
-    // inputValue:
-  
-    // showConfirmButton:
-    // confirmButtonColor:
-    // confirmButtonAriaLabel:
-  
-    // showCancelButton:
-    // cancelButtonText:
-    // cancelButtonColor:
-    // cancelButtonAriaLabel:
-    
-    // buttonsStyling:
-    // showCloseButton:
-    // closeButtonAriaLabel:
-  
-    // imageUrl:
-    // imageWidth:
-    // imageHeight:
-    // imageAlt:
-  });
 
-  if (Usuario){
-    Swal.fire({
-        title: 'Bienvenido ${Usuario}'
-    });
+Swal.fire({
+  title: "Quieres continuar en nuestra tienda online?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Continuar",
+  denyButtonText: `Salir`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire("Muchas Gracias!", "", "success");
+  } else if (result.isDenied) {
+    Swal.fire("Changes are not saved", "", "info");
   }
-})()
-
-/*Swal.fire({
-    title: 'Quieres continuar en nuestra tienda?',
-    showDenyButton: true,
-    showCancelButton: 'Cancelar',
-    confirmButtonText: 'Continuar',
-    denyButtonText: `No quiero continuar`,
-  }).then((result) => {
-    Read more about isConfirmed, isDenied below 
-    if (result.isConfirmed) {
-      Swal.fire('Correcto!', '', 'success')
-    } else if (result.isDenied) {
-      Swal.fire('Lamentamos que te vayas', '', 'info')
-    }
-  }) */
-
+});
 
 const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
 { id: 2, perfume: "The one light blue EDP", precio: 96450, aroma: "frutal"},
