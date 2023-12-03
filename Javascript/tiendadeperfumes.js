@@ -15,6 +15,23 @@ Swal.fire({
   }
 });
 
+const respuestaBotonComprar = () => {
+  Swal.fire({
+    title: "¿Quiere agregar este producto al carrito?",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: "Continuar",
+    denyButtonText: `Salir`
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire("Gracias por su compra!", "", "success");
+    } else if (result.isDenied) {
+      Swal.fire("Changes are not saved", "", "info");
+    }
+  })
+};
+
 const Perfumes = [{ id: 1, perfume: "The one gold EDP", precio: 108520, aroma: "vainilla"},
 { id: 2, perfume: "The one light blue EDP", precio: 96450, aroma: "frutal"},
 { id: 3, perfume: "The one pour homme EDP", precio: 79800, aroma: "amaderado"},
@@ -96,7 +113,8 @@ arrayNuevosPerfumes.push("HERMES")
 let boton = document.getElementById("btnprincipal")
 boton.addEventListener("click", respuestaClick)
 function respuestaClick() {
-    console.log("Respuesta evento");
+    console.log("Usted ha agregado un producto al carrito");
+    console.log("Muchas gracias por su compra");
 }
 
 // AGREGAMOS LocalStorage
