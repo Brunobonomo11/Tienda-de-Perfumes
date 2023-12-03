@@ -1,15 +1,15 @@
 // AGREGAMOS SWEET ALERT
 
 Swal.fire({
-  title: "Quieres continuar en nuestra tienda online?",
+  title: "QUERES CONTINUAR EN NUESTRA TIENDA ONLINE?",
   showDenyButton: true,
   showCancelButton: true,
-  confirmButtonText: "Continuar",
-  denyButtonText: `Salir`
+  confirmButtonText: "CONTINUAR",
+  denyButtonText: `SALIR`
 }).then((result) => {
   /* Read more about isConfirmed, isDenied below */
   if (result.isConfirmed) {
-    Swal.fire("Muchas Gracias!", "", "success");
+    Swal.fire("MUCHAS GRACIAS!", "", "success");
   } else if (result.isDenied) {
     Swal.fire("Changes are not saved", "", "info");
   }
@@ -17,18 +17,20 @@ Swal.fire({
 
 const respuestaBotonComprar = () => {
   Swal.fire({
-    title: "¿Quiere agregar este producto al carrito?",
+    title: "¿QUERES AGREGAR ESTE PRODUCTO AL CARRITO?",
     showDenyButton: true,
     showCancelButton: true,
-    confirmButtonText: "Continuar",
-    denyButtonText: `Salir`
+    confirmButtonText: "CONTINUAR",
+    denyButtonText: `SALIR`
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-      Swal.fire("Gracias por su compra!", "", "success");
+      Swal.fire("GRACIAS POR SU COMPRA!", "", "success");
     } else if (result.isDenied) {
       Swal.fire("Changes are not saved", "", "info");
     }
+    console.log("Usted ha agregado un producto al carrito");
+    console.log("Muchas gracias por su compra");
   })
 };
 
@@ -110,12 +112,12 @@ arrayNuevosPerfumes.push("HERMES")
 
 // AGREGAMOS EVENTOS
 
-let boton = document.getElementById("btnprincipal")
+/* let boton = document.getElementById("btnprincipal")
 boton.addEventListener("click", respuestaClick)
 function respuestaClick() {
     console.log("Usted ha agregado un producto al carrito");
     console.log("Muchas gracias por su compra");
-}
+} */
 
 // AGREGAMOS LocalStorage
 
